@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Button from "../../../shared/Button";
+import Button from "../../../shared/components/Button";
 
 const Feature = ({ title, text }) => {
   return (

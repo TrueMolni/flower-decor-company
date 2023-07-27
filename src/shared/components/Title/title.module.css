@@ -1,0 +1,35 @@
+.mainTitle {
+  font-family: "StyleScript";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1.2;
+  /* or 132% */
+
+  /* Colour/Main/Blue/900 */
+
+  color: #621244;
+}
+
+.title {
+  font-family: "Lobster";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 47px;
+  line-height: 1.31;
+
+  color: #621244;
+}
+
+.subTitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  /* Colour/Main/Blue/900 */
+
+  color: #091133;
+}
