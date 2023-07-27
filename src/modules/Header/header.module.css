@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  display: inline-flex;
+  width: 100px;
+  height: 58px;
+
+  text-decoration: none;
+
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+}
+.navigation {
+  width: 494px;
+  height: 60px;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  list-style: none;
+}
+
+.link {
+  font-family: "Inter";
+  font-size: 22px;
+  line-height: 1.1;
+
+  text-decoration: none;
+
+  color: #222;
+}
