@@ -1,0 +1,25 @@
+.btn {
+  width: 208px;
+  height: 70px;
+
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.72px;
+
+  border: none;
+  border-radius: 17px;
+
+  color: #ffffff;
+  background-color: #292f36;
+
+  cursor: pointer;
+
+  transition: color 250ms ease-in, background 250ms ease-in;
+
+  &:hover,
+  &:focus {
+    background-color: #cda274;
+    color: #292f36;
+  }
+}

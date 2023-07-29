@@ -1,0 +1,21 @@
+.wrapper {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  list-style: none;
+}
+
+.item {
+  margin-bottom: 50px;
+}
+
+.item :not(:nth-child(3)) {
+  margin-right: 35px;
+}

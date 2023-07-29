@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 
-export const data = [
+export const servicesData = [
   {
     title: "Декор послуги та флористика для весілля",
     content: [
