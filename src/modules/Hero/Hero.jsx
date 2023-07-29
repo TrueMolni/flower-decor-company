@@ -12,7 +12,7 @@ const Hero = () => {
           <h2 className={css.accentTitle}>
             Світ квітів, декору і краси з історією.
           </h2>
-          {/* <Button text={"Замовити"} /> */}
+          <Button text={"Замовити"} />
         </div>
       </div>
     </section>

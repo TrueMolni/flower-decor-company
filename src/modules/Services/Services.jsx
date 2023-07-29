@@ -16,7 +16,7 @@ const Services = ({ items }) => {
 
   return (
     <div>
-      <Title title={"Наші послуги"} size={"h2"} />;
+      <Title title={"Наші послуги"} size={"h2"} />
       <PhotoCard img={image} />
       <ul>{posts}</ul>
     </div>

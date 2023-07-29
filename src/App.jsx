@@ -5,6 +5,7 @@ import Hero from "./modules/Hero";
 import Features from "./modules/Features";
 import Conditions from "./modules/Сonditions";
 import Services from "./modules/Services";
+import Galery from "./modules/Gallery";
 
 import { data } from "./shared/data/servicesData";
 
@@ -19,6 +20,7 @@ function App() {
       <Features />
       <Conditions title={"Умови співпраці"} />
       <Services items={data} />
+      <Galery />
     </div>
     // </ChakraProvider>
   );

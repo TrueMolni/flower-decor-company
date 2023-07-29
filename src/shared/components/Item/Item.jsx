@@ -7,15 +7,18 @@ import PhotoCard from "../PhotoCard";
 import css from "./item.module.css";
 import defaultPicture from "../../images/services/services1_1x.jpg";
 
-const unicodeCharacter = "\u02501";
+const unicodeCharacter = "\u0003";
+// U+23AF - код для горизонтальної лініїї
 
 const Item = ({ title, content, img }) => {
   const elements = content.map(({ id, text }) => {
-    <li key={id}>
-      <p className={css.text}>
-        {unicodeCharacter} {text}
-      </p>
-    </li>;
+    return (
+      <li key={id}>
+        <p className={css.text}>
+          {unicodeCharacter} {text}
+        </p>
+      </li>
+    );
   });
 
   return (
