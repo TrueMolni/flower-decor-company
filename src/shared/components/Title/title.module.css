@@ -24,14 +24,15 @@
 }
 
 .subTitle {
-  font-family: "Roboto";
+  font-family: "Lobster";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  font-size: 25px;
+  line-height: 1.56;
+  letter-spacing: 0.22px;
   /* identical to box height, or 162% */
 
   /* Colour/Main/Blue/900 */
 
-  color: #091133;
+  color: #621244;
 }

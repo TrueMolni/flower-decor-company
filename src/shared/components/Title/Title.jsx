@@ -7,7 +7,15 @@ const Title = ({ title, size, customClass }) => {
   const markup = (size) => {
     switch (size) {
       case "h1":
-        return <h1 className={css.mainTitle}>{title}</h1>;
+        return (
+          <h1
+            className={
+              !customClass ? css.mainTitle : css.mainTitle + " " + customClass
+            }
+          >
+            {title}
+          </h1>
+        );
 
       case "h2":
         return (

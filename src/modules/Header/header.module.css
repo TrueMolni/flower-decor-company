@@ -1,7 +1,15 @@
+.header {
+  padding: 22px 0;
+
+  background-color: #ffffff;
+}
+
 .wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  padding: 0 15px;
 }
 
 .logo {
@@ -19,8 +27,11 @@
   color: #621244;
 }
 .navigation {
-  width: 494px;
-  height: 60px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .navList {
@@ -31,6 +42,12 @@
   list-style: none;
 }
 
+.item {
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
 .link {
   font-family: "Inter";
   font-size: 22px;
@@ -39,4 +56,23 @@
   text-decoration: none;
 
   color: #222;
+
+  transition: color 250ms ease-in;
+
+  &:hover,
+  &:focus {
+    color: #cda274;
+  }
+}
+
+.burger {
+  margin: 10px 0;
+  padding: 0;
+  line-height: 0;
+
+  color: #222;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

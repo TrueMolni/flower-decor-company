@@ -11,9 +11,15 @@ const Features = () => {
   ));
 
   return (
-    <section>
-      <Title size={"h2"} title={"Переваги"} />
-      <ul className={css.list}>{items}</ul>
+    <section className={css.section}>
+      <div className={css.container}>
+        <Title
+          customClass={css.visuallyHidden}
+          size={"h2"}
+          title={"Переваги"}
+        />
+        <ul className={css.list}>{items}</ul>
+      </div>
     </section>
   );
 };
