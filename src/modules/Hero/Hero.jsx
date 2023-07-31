@@ -8,11 +8,15 @@ const Hero = () => {
     <section>
       <div className={css.bg}>
         <div className={css.contentWrapper}>
-          <Title title={"Flower Décor Company"} size={"h1"} />
+          <Title
+            customClass={css.mainTitle}
+            title={"Flower Décor Company"}
+            size={"h1"}
+          />
           <h2 className={css.accentTitle}>
             Світ квітів, декору і краси з історією.
           </h2>
-          {/* <Button text={"Замовити"} /> */}
+          <Button customClass={css.heroBtn} text={"Замовити"} />
         </div>
       </div>
     </section>

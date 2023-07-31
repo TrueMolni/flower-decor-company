@@ -1,0 +1,50 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #e7ded8;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.logo {
+  display: inline-block;
+  width: 100px;
+  height: 58px;
+
+  text-decoration: none;
+
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 1;
+
+  color: #621244;
+}
+
+.socialMediaLinks {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
+
+  list-style: none;
+}

@@ -1,6 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
+import Title from "../../shared/components/Title";
 import Button from "../../shared/components/Button";
 
 import { items } from "./items";
@@ -9,7 +10,7 @@ import image1 from "../../shared/images/conditions/conditions_1x.png";
 
 import css from "./conditions.module.css";
 
-const Conditions = ({ title }) => {
+const Conditions = () => {
   const list = items.map(({ id, text }) => (
     <li key={id}>
       <p>{text}</p>
@@ -19,7 +20,7 @@ const Conditions = ({ title }) => {
   return (
     <div className={css.wrapper}>
       <div className={css.contentWrapper}>
-        <h2 className={css.title}>{title}</h2>
+        <Title size={"h2"} title={"Умови співпраці"} />
         <ul>{list}</ul>
         <Button text={"Зв'язатися з нами"} />
       </div>
@@ -30,6 +31,4 @@ const Conditions = ({ title }) => {
 
 export default Conditions;
 
-Conditions.propTypes = {
-  title: PropTypes.string,
-};
+// Conditions.propTypes = {};
