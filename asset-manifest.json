@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/flower-decor-company/static/css/main.4e97e433.css",
-    "main.js": "/flower-decor-company/static/js/main.fdd44edc.js",
+    "main.css": "/flower-decor-company/static/css/main.d9c3d3c7.css",
+    "main.js": "/flower-decor-company/static/js/main.e0addc18.js",
     "static/media/hero_2x.jpg": "/flower-decor-company/static/media/hero_2x.c01ff6bd7e23307d8bf5.jpg",
     "static/media/conditions_1x.png": "/flower-decor-company/static/media/conditions_1x.ec4cd443617f1a9da302.png",
     "static/media/hero_1x.jpg": "/flower-decor-company/static/media/hero_1x.1811f62dffc8e3eec67d.jpg",
+    "static/media/gallery2_1x.jpg": "/flower-decor-company/static/media/gallery2_1x.3bef0e47b87ce71fe6ef.jpg",
+    "static/media/gallery6_1x.jpg": "/flower-decor-company/static/media/gallery6_1x.f3c80a1ae281b0155cfb.jpg",
+    "static/media/gallery3_1x.jpg": "/flower-decor-company/static/media/gallery3_1x.24463faadb012e126df9.jpg",
+    "static/media/gallery1_1x.jpg": "/flower-decor-company/static/media/gallery1_1x.e6099ea5991bf8687a7e.jpg",
     "static/media/services1_1x.jpg": "/flower-decor-company/static/media/services1_1x.94429aa987ec931d1f3a.jpg",
+    "static/media/gallery5_1x.jpg": "/flower-decor-company/static/media/gallery5_1x.14ccfcd15aca6dd70a1a.jpg",
+    "static/media/gallery4_1x.jpg": "/flower-decor-company/static/media/gallery4_1x.5bdec02e93c2034e98a4.jpg",
     "index.html": "/flower-decor-company/index.html",
-    "main.4e97e433.css.map": "/flower-decor-company/static/css/main.4e97e433.css.map",
-    "main.fdd44edc.js.map": "/flower-decor-company/static/js/main.fdd44edc.js.map"
+    "main.d9c3d3c7.css.map": "/flower-decor-company/static/css/main.d9c3d3c7.css.map",
+    "main.e0addc18.js.map": "/flower-decor-company/static/js/main.e0addc18.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e97e433.css",
-    "static/js/main.fdd44edc.js"
+    "static/css/main.d9c3d3c7.css",
+    "static/js/main.e0addc18.js"
   ]
 }
