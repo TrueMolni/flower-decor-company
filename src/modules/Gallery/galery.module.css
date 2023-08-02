@@ -23,9 +23,23 @@
 }
 
 .item {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
-.item :not(:nth-child(3)) {
-  margin-right: 35px;
+@media screen and (min-width: 768px) {
+  .item:not(:nth-child(2n)) {
+    margin-right: 35px;
+  }
+  .item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item:not(:nth-child(3)) {
+    margin-right: 35px;
+  }
+  .item {
+    margin-bottom: 50px;
+  }
 }
