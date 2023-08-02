@@ -3,6 +3,7 @@ import React from "react";
 
 import Title from "../../shared/components/Title";
 import Button from "../../shared/components/Button";
+import PhotoCard from "../../shared/components/PhotoCard";
 
 import { items } from "./items";
 import image1 from "../../shared/images/conditions/conditions_1x.png";
@@ -24,7 +25,14 @@ const Conditions = () => {
         <ul>{list}</ul>
         <Button text={"Зв'язатися з нами"} />
       </div>
-      <img width="592" src={image1} alt="wedding couple" />
+
+      <PhotoCard
+        img={image1}
+        imageClass={""}
+        customClass={""}
+        width={"592"}
+        alt={"wedding couple"}
+      />
     </div>
   );
 };
