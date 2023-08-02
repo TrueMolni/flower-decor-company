@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/flower-decor-company/static/css/main.d9c3d3c7.css",
-    "main.js": "/flower-decor-company/static/js/main.e0addc18.js",
+    "main.css": "/flower-decor-company/static/css/main.e0cc2b46.css",
+    "main.js": "/flower-decor-company/static/js/main.dd7be241.js",
     "static/media/hero_2x.jpg": "/flower-decor-company/static/media/hero_2x.c01ff6bd7e23307d8bf5.jpg",
     "static/media/conditions_1x.png": "/flower-decor-company/static/media/conditions_1x.ec4cd443617f1a9da302.png",
     "static/media/hero_1x.jpg": "/flower-decor-company/static/media/hero_1x.1811f62dffc8e3eec67d.jpg",
@@ -13,11 +13,11 @@
     "static/media/gallery5_1x.jpg": "/flower-decor-company/static/media/gallery5_1x.14ccfcd15aca6dd70a1a.jpg",
     "static/media/gallery4_1x.jpg": "/flower-decor-company/static/media/gallery4_1x.5bdec02e93c2034e98a4.jpg",
     "index.html": "/flower-decor-company/index.html",
-    "main.d9c3d3c7.css.map": "/flower-decor-company/static/css/main.d9c3d3c7.css.map",
-    "main.e0addc18.js.map": "/flower-decor-company/static/js/main.e0addc18.js.map"
+    "main.e0cc2b46.css.map": "/flower-decor-company/static/css/main.e0cc2b46.css.map",
+    "main.dd7be241.js.map": "/flower-decor-company/static/js/main.dd7be241.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9c3d3c7.css",
-    "static/js/main.e0addc18.js"
+    "static/css/main.e0cc2b46.css",
+    "static/js/main.dd7be241.js"
   ]
 }
