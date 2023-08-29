@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -13,31 +14,31 @@ const Header = () => {
 
   return (
     <header className={css.header}>
-      <div className={css.wrapper + ' ' + 'container'}>
-        <a className={css.logo + ' ' + 'link'} href="#">
+      <div className={css.wrapper + ' container'}>
+        <Link to={'/'} className={css.logo + ' link'}>
           Flower Decor Company
-        </a>
+        </Link>
         <nav className={css.navigation}>
           <ul className={css.navList}>
             <li className={css.item}>
-              <a href="#" className={css.link}>
+              <NavLink to="/" className={css.link}>
                 Замовити
-              </a>
+              </NavLink>
             </li>
             <li className={css.item}>
-              <a href="#" className={css.link}>
+              <NavLink to="/" className={css.link}>
                 Про нас
-              </a>
+              </NavLink>
             </li>
             <li className={css.item}>
-              <a href="#" className={css.link}>
+              <NavLink to="/" className={css.link}>
                 Блог
-              </a>
+              </NavLink>
             </li>
             <li className={css.item}>
-              <a href="#" className={css.link}>
-                Каталог
-              </a>
+              <NavLink to="/gallery" className={css.link}>
+                Галерея
+              </NavLink>
             </li>
           </ul>
         </nav>

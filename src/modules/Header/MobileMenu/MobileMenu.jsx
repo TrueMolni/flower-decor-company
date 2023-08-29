@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import CloseIcon from "@mui/icons-material/Close";
+import CloseIcon from '@mui/icons-material/Close';
 
-import React from "react";
+import React from 'react';
 
 const MobileMenu = () => {
   const [isShown, setIsShown] = useState(false);

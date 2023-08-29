@@ -7,6 +7,7 @@ import Loader from './shared/components/Loader';
 import SharedLayout from './modules/SharedLayout';
 
 const MainPage = lazy(() => import('pages/MainPage'));
+const GalleryPage = lazy(() => import('pages/GalleryPage'));
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<MainPage />}></Route>
+            <Route path="/gallery" element={<GalleryPage />}></Route>
           </Route>
         </Routes>
       </Suspense>
