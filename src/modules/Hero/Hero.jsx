@@ -4,11 +4,11 @@ import Title from "../../shared/components/Title";
 import css from "./hero.module.css";
 //
 // Anjhay
-// 
+//
 const Hero = () => {
   return (
     <section className={css.bg}>
-      <div className={css.contentWrapper + " " + "container"}>
+      <div className={css.contentWrapper + " container"}>
         <Title
           customClass={css.mainTitle}
           title={"Flower Décor Company"}
