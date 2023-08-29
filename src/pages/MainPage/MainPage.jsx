@@ -4,7 +4,7 @@ import Hero from '../../modules/Hero';
 import Features from '../../modules/Features';
 import Conditions from '../../modules/Сonditions';
 import Services from '../../modules/Services';
-import Galery from '../../modules/Gallery';
+// import Galery from '../../modules/Gallery';
 import ContactCall from '../../modules/ContactCall';
 
 import { servicesData } from '../../shared/data/servicesData';
@@ -19,7 +19,7 @@ const MainPage = () => {
       <Features />
       <Conditions />
       <Services items={servicesData} />
-      <Galery data={galleryData} />
+      {/* <Galery data={galleryData} /> */}
       <ContactCall />
     </div>
   );
