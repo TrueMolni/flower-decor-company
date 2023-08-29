@@ -10,23 +10,23 @@ export const servicesData = [
       },
       {
         id: nanoid(),
-        text: "Президіум;",
+        text: "Президіум",
       },
       {
         id: nanoid(),
-        text: "Виїзна  церемонія;",
+        text: "Виїзна  церемонія",
       },
       {
         id: nanoid(),
-        text: "Фотозона;",
+        text: "Фотозона",
       },
       {
         id: nanoid(),
-        text: "План розсадки;",
+        text: "План розсадки",
       },
       {
         id: nanoid(),
-        text: "Весілля під замовлення;",
+        text: "Весілля під замовлення",
       },
     ],
     // img: "",
@@ -36,15 +36,15 @@ export const servicesData = [
     content: [
       {
         id: nanoid(),
-        text: "для магазинів;",
+        text: "для магазинів",
       },
       {
         id: nanoid(),
-        text: "для кав’ярень;",
+        text: "для кав’ярень",
       },
       {
         id: nanoid(),
-        text: "для ресторанів;",
+        text: "для ресторанів",
       },
     ],
     // img: "",
@@ -54,15 +54,15 @@ export const servicesData = [
     content: [
       {
         id: nanoid(),
-        text: "для магазинів;",
+        text: "для магазинів",
       },
       {
         id: nanoid(),
-        text: "для кав’ярень;",
+        text: "для кав’ярень",
       },
       {
         id: nanoid(),
-        text: "для ресторанів;",
+        text: "для ресторанів",
       },
     ],
     // img: "",
@@ -72,15 +72,15 @@ export const servicesData = [
     content: [
       {
         id: nanoid(),
-        text: "для фотостудій;",
+        text: "для фотостудій",
       },
       {
         id: nanoid(),
-        text: "для фотоднів;",
+        text: "для фотоднів",
       },
       {
         id: nanoid(),
-        text: "індивідуальних фотосесій;",
+        text: "індивідуальних фотосесій",
       },
     ],
     // img: "",

@@ -5,12 +5,14 @@ import Title from "../../../shared/components/Title";
 
 import css from "./feature.module.css";
 
-const Feature = ({ title, text }) => {
+const Feature = ({ title, text, itemClass }) => {
   return (
-    <li className={css.item}>
+    <li className={!itemClass ? css.item : css.item + " " + itemClass}>
       <Title size={"h3"} title={title} />
-      <p className={css.text}>{text}</p>
-      <Button customClass={css.btn} text={"Переглянути"} />
+      <div className={css.wrapper}>
+        <p className={css.text}>{text}</p>
+        <Button customClass={css.btn} text={"Переглянути"} />
+      </div>
     </li>
   );
 };
@@ -20,4 +22,5 @@ export default Feature;
 Feature.propTypes = {
   title: PropTypes.string,
   text: PropTypes.string,
+  itemClass: PropTypes.string,
 };

@@ -1,0 +1,24 @@
+.serviceList {
+  margin-top: 100px;
+
+  text-align: center;
+}
+
+.item:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+/* .contentWrapeer {
+  display: flex;
+} */
+
+@media screen and (max-width: 767px) {
+  .item {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img {
+    width: 1200px;
+  }
+}

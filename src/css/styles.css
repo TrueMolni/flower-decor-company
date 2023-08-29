@@ -2,7 +2,8 @@
 @import "./base//_base.css";
 @import "./base/_container.css";
 @import "./base/_variables.css";
+@import "./base/_section.css";
 
 /* utils */
 
-@import "./utils/_visually-hidden.css";
+@import "./utils/_visuallyHidden.css";

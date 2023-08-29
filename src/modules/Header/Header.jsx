@@ -13,8 +13,8 @@ const Header = () => {
 
   return (
     <header className={css.header}>
-      <div className={css.wrapper}>
-        <a className={css.logo} href="#">
+      <div className={css.wrapper + " " + "container"}>
+        <a className={css.logo + " " + "link"} href="#">
           Flower Decor Company
         </a>
         <nav className={css.navigation}>

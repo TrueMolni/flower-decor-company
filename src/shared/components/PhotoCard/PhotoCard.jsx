@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const PhotoCard = ({ img, alt, width, customClass, imageClass }) => {
   return (
     <div className={customClass}>
-      <img className={imageClass} width={width} idth src={img} alt={alt} />
+      <img className={imageClass} width={width} src={img} alt={alt} />
     </div>
   );
 };
