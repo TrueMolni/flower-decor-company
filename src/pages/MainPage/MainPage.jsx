@@ -8,7 +8,7 @@ import Services from '../../modules/Services';
 import ContactCall from '../../modules/ContactCall';
 
 import { servicesData } from '../../shared/data/servicesData';
-import { galleryData } from '../../shared/data/galleryData';
+// import { galleryData } from '../../shared/data/galleryData';
 
 import css from './main-page.module.css';
 

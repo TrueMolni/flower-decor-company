@@ -1,32 +1,32 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import css from "./title.module.css";
+import css from './title.module.css';
 
 const Title = ({ title, size, customClass }) => {
-  const markup = (size) => {
+  const markup = size => {
     switch (size) {
-      case "h1":
+      case 'h1':
         return (
           <h1
             className={
-              !customClass ? css.mainTitle : css.mainTitle + " " + customClass
+              !customClass ? css.mainTitle : css.mainTitle + ' ' + customClass
             }
           >
             {title}
           </h1>
         );
 
-      case "h2":
+      case 'h2':
         return (
           <h2
-            className={!customClass ? css.title : css.title + " " + customClass}
+            className={!customClass ? css.title : css.title + ' ' + customClass}
           >
             {title}
           </h2>
         );
 
-      case "h3":
+      case 'h3':
         return <h3 className={css.subTitle}>{title}</h3>;
 
       default:
@@ -40,9 +40,9 @@ const Title = ({ title, size, customClass }) => {
 export default Title;
 
 Title.defaultProps = {
-  title: "Light, Fast & Powerful",
-  size: "h1",
-  customClass: "",
+  title: 'Light, Fast & Powerful',
+  size: 'h1',
+  customClass: '',
 };
 
 Title.propTypes = {
