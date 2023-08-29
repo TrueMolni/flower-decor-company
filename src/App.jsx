@@ -1,33 +1,24 @@
-//import { ChakraProvider } from '@chakra-ui/react'
-import Header from "./modules/Header";
-// import Button from "./shared/Button";
-import Hero from "./modules/Hero";
-import Features from "./modules/Features";
-import Conditions from "./modules/Сonditions";
-import Services from "./modules/Services";
-import Galery from "./modules/Gallery";
-import ContactCall from "./modules/ContactCall";
-import Footer from "./modules/Footer";
+import { lazy, Suspense } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { servicesData } from "./shared/data/servicesData";
-import { galleryData } from "./shared/data/galleryData";
+// import css from "./app.module.css";
 
-import css from "./app.module.css";
+import Loader from './shared/components/Loader';
+import SharedLayout from './modules/SharedLayout';
+
+const MainPage = lazy(() => import('pages/MainPage'));
 
 function App() {
   return (
-    // <ChakraProvider>
-    <div className={css.wrapper}>
-      <Header />
-      <Hero />
-      <Features />
-      <Conditions />
-      <Services items={servicesData} />
-      <Galery data={galleryData} />
-      <ContactCall />
-      <Footer />
-    </div>
-    // </ChakraProvider>
+    <BrowserRouter basename="flower-decor-company">
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<MainPage />}></Route>
+          </Route>
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
   );
 }
 
