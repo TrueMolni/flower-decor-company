@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -23,9 +23,6 @@ const Footer = (props) => {
           <a href="tel:+01 598 269 4756">+01 598 269 4756</a>
         </div>
         <div>
-          <p>Розклад</p>
-          <p>Понеділок - Четвер: 9:30 - 18:00</p>
-          <p>П’ятниця: 9:30 - 15:00</p>
           <ul className={css.socialMediaLinks}>
             <li>
               <a href="#">
@@ -54,6 +51,6 @@ const Footer = (props) => {
   );
 };
 
-Footer.propTypes = {};
+// Footer.propTypes = {};
 
 export default Footer;

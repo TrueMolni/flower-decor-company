@@ -6,20 +6,36 @@ import Button from "../../shared/components/Button";
 
 import css from "./contact-call.module.css";
 
-const ContactCall = (props) => {
+const ContactCall = () => {
   return (
-    <section>
-      <div className={css.container}>
+    <section className={css.section}>
+      {/* <div className={css.container}>
         <div className={css.background}>
           <div className={css.contentWrapper}>
             <Title
               customClass={css.title}
               size={"h2"}
-              title={"Хочете замовити декор?"}
+              title={
+                "Наша ціль - культивувавати декор, флористику як мистецтво"
+                "Для зв'язку з нами"
+              }
             />
-            <p className={css.description}>Зв'яжіться з нами</p>
+            <p className={css.description}>
+              Якщо наші цілі співпадають - давайте створювати!
+            </p>
             <Button text={"Зв’язатись"} />
           </div>
+        </div>
+      </div> */}
+      {/* From Hero */}
+      <div className={css.bg}>
+        <div className={css.contentWrapper + " " + "container"}>
+          <Title customClass={css.mainTitle} title={"Пишіть нам"} size={"h1"} />
+          <p className={css.description}>Створимо ефектний декор</p>
+          {/* <h2 className={css.accentTitle}>
+          Світ квітів, декору і краси з історією.
+        </h2> */}
+          <Button customClass={css.heroBtn} text={"Замовити"} />
         </div>
       </div>
     </section>

@@ -1,9 +1,10 @@
 .mainTitle {
   text-align: center;
-  font-family: "StyleScript";
+  font-family: 
+  /* "StyleScript", */ sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 26px;
   line-height: 1.2;
   /* or 132% */
 
@@ -14,7 +15,8 @@
 
 .title {
   text-align: center;
-  font-family: "Lobster";
+  font-family:
+   /* "Lobster", */ sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 47px;
@@ -24,7 +26,8 @@
 }
 
 .subTitle {
-  font-family: "Lobster";
+  font-family: 
+  /* "Lobster",  */ sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
@@ -35,4 +38,18 @@
   /* Colour/Main/Blue/900 */
 
   color: #621244;
+}
+
+@media screen and (min-width: 1200px) {
+  .mainTitle {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainTitle {
+    width: 696px;
+    font-size: 80px;
+    width: 360px;
+  }
 }

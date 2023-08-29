@@ -1,3 +1,17 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+.contentWrapeer {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
 .text {
   font-family: "Inter";
   font-style: normal;

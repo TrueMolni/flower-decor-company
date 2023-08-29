@@ -6,20 +6,23 @@ import image from "../../shared/images/services/services1_1x.jpg";
 import Title from "../../shared/components/Title";
 import PhotoCard from "../../shared/components/PhotoCard/PhotoCard";
 import Item from "../../shared/components/Item";
+// import { css } from "@emotion/react";
 
-// import css from "./services.module.css";
+import css from "./services.module.css";
 
 const Services = ({ items }) => {
   const posts = items.map(({ title, content, img }) => (
-    <Item title={title} content={content} img={img} />
+    <Item key={title} title={title} content={content} img={img} customItemClass={css.item} />
   ));
 
   return (
-    <div>
-      <Title title={"Наші послуги"} size={"h2"} />
-      <PhotoCard img={image} />
-      <ul>{posts}</ul>
-    </div>
+    <section>
+      <div className={"container"}>
+        <Title title={"Наші послуги"} size={"h2"} />
+        <PhotoCard imageClass={css.img} img={image} />
+        <ul className={css.serviceList}>{posts}</ul>
+      </div>
+    </section>
   );
 };
 

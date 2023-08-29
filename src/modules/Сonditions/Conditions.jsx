@@ -19,21 +19,23 @@ const Conditions = () => {
   ));
 
   return (
-    <div className={css.wrapper}>
-      <div className={css.contentWrapper}>
-        <Title size={"h2"} title={"Умови співпраці"} />
-        <ul>{list}</ul>
-        <Button text={"Зв'язатися з нами"} />
-      </div>
+    <section>
+      <div className={css.wrapper + " container"}>
+        <div className={css.contentWrapper}>
+          <Title size={"h2"} title={"Умови співпраці"} />
+          <ul>{list}</ul>
+          <Button text={"Зв'язатися з нами"} />
+        </div>
 
-      <PhotoCard
-        img={image1}
-        imageClass={""}
-        customClass={""}
-        width={"592"}
-        alt={"wedding couple"}
-      />
-    </div>
+        <PhotoCard
+          img={image1}
+          imageClass={""}
+          customClass={""}
+          width={"592"}
+          alt={"wedding couple"}
+        />
+      </div>
+    </section>
   );
 };
 

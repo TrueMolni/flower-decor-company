@@ -4,20 +4,18 @@
   --tablet-breakpoint: 768px;
   --desktop-breakpoint: 1280px;
   /* ====================colors==================== */
-  --accent-color: #ff8356;
-  --auth-nav-color: #ffc107;
-  --main-background-color: #fef9f9;
+  --logo-color: #621244;
+  --accent-color: #cda274;
+  --main-title-color: #621244;
+  --black-theme-color: #fef9f9;
   --primary-text-color: #111111;
-  --secondary-text-color: #fff;
-  --btn-disabled-color: #cce4fb;
-  --btn-default-color: #54adff;
-  --green: #00c3ad;
-  --red: #f43f5e;
-  --btn-gradient-start: #419ef1;
-  --btn-gradient-end: #9bd0ff;
-  /* gradient from 419EF1 to 9BD0FF */
+  --btn-text-color: #fef9f9;
+  --btn-bg-color: #111111;
+  --btn-hover-color: #cda274;
+  --btn-hover-text-color: #111111;
 
   /* ====================font==================== */
 
-  --font-family: "Inter";
+  --primary-font-family: "sans-serif";
+  --secondary-font-family: "Inter";
 }
