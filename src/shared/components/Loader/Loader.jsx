@@ -1,6 +1,6 @@
-import { Rings } from "react-loader-spinner";
+import { Rings } from 'react-loader-spinner';
 
-import css from "./loader.module.css";
+import css from './loader.module.css';
 
 export const Loader = () => {
   return (
@@ -8,7 +8,7 @@ export const Loader = () => {
       <Rings
         height="150"
         width="150"
-        color="#4fa94d"
+        color="#621244"
         radius="6"
         wrapperStyle={{}}
         wrapperClass=""

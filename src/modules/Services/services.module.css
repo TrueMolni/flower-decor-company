@@ -1,9 +1,9 @@
 .title {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .serviceList {
-  margin-top: 100px;
+  margin-top: 50px;
 
   text-align: center;
 }
@@ -15,14 +15,35 @@
   display: flex;
 } */
 
+/* .img {
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 32px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .item {
     flex-wrap: wrap-reverse;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .serviceList {
+    margin-top: 100px;
+  }
+  .img {
+    width: 728px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .img {
-    width: 1200px;
+    width: 1160px;
   }
 }

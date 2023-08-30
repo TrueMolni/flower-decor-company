@@ -27,7 +27,15 @@ const Title = ({ title, size, customClass }) => {
         );
 
       case 'h3':
-        return <h3 className={css.subTitle}>{title}</h3>;
+        return (
+          <h3
+            className={
+              !customClass ? css.subTitle : css.subTitle + ' ' + customClass
+            }
+          >
+            {title}
+          </h3>
+        );
 
       default:
         return <h4 className={css.subTitle}>{title}</h4>;
