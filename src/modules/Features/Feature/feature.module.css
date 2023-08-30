@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.wrapper {
+  max-width: 380px;
+  min-height: 180px;
+}
+
 .text {
   margin-top: 16px;
 }
@@ -15,19 +20,18 @@
     margin-top: 30px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .wrapper {
-    width: 400px;
-  }
-}
 @media screen and (max-width: 767px) {
   .wrapper {
-    height: 180px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    max-width: 380px;
   }
 }
