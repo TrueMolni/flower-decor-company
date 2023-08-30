@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 // import PropTypes from "prop-types";
 
-import Title from "../../shared/components/Title";
-import Button from "../../shared/components/Button";
+import Title from '../../shared/components/Title';
+import Button from '../../shared/components/Button';
 
-import css from "./contact-call.module.css";
+import css from './contact-call.module.css';
 
 const ContactCall = () => {
   return (
@@ -29,13 +29,11 @@ const ContactCall = () => {
       </div> */}
       {/* From Hero */}
       <div className={css.bg}>
-        <div className={css.contentWrapper + " " + "container"}>
-          <Title customClass={css.mainTitle} title={"Пишіть нам"} size={"h1"} />
+        <div className={css.contentWrapper + ' container'}>
+          <Title customClass={css.mainTitle} title={'Пишіть нам'} size={'h2'} />
           <p className={css.description}>Створимо ефектний декор</p>
-          {/* <h2 className={css.accentTitle}>
-          Світ квітів, декору і краси з історією.
-        </h2> */}
-          <Button customClass={css.heroBtn} text={"Замовити"} />
+
+          <Button customClass={css.callBtn} text={'Замовити'} />
         </div>
       </div>
     </section>

@@ -1,48 +1,54 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 // import PropTypes from "prop-types";
 
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import PinterestIcon from "@mui/icons-material/Pinterest";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
-import css from "./footer.module.css";
+import css from './footer.module.css';
 
-const Footer = (props) => {
+const Footer = props => {
   return (
     <footer className={css.footer}>
-      <div className={css.container}>
-        <a className={css.logo} href="#">
+      <div className={css.container + ' conatiner'}>
+        <Link className={css.logo} href="/">
           Flower Decor Company
-        </a>
-        <div>
-          <p>Контакти</p>
-          <p>Маєте запитання чи пропозиції?</p>
-          <a href="mailto:example@mail.com">example@mail.com</a>
-          <p>Маєте питання? Телефонуйте</p>
-          <a href="tel:+01 598 269 4756">+01 598 269 4756</a>
+        </Link>
+        <div className={css.contactsWrapper}>
+          <p className={css.text + ' ' + css.accent}>Контакти</p>
+          <p className={css.text}>Маєте запитання чи пропозиції?</p>
+          <Link className={css.link + ' link'} to="mailto:example@mail.com">
+            example@mail.com
+          </Link>
+          <p className={css.text}>Маєте питання? Телефонуйте</p>
+          <Link className={css.link + ' link'} to="tel:+01 598 269 4756">
+            +01 598 269 4756
+          </Link>
         </div>
         <div>
+          <p className={css.text + ' ' + css.accent}>Слідкуйте за нами</p>
           <ul className={css.socialMediaLinks}>
             <li>
-              <a href="#">
+              <Link className={css.icon} to="/">
                 <FacebookOutlinedIcon />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link className={css.icon} to="/">
                 <InstagramIcon />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link className={css.icon} to="/">
                 <PinterestIcon />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link className={css.icon} to="/">
                 <TwitterIcon />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

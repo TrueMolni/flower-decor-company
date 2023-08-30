@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import Title from "../Title";
-import PhotoCard from "../PhotoCard";
+import Title from '../Title';
+import PhotoCard from '../PhotoCard';
 
-import css from "./item.module.css";
-import defaultPicture from "../../images/services/services1_1x.jpg";
+import css from './item.module.css';
+import defaultPicture from '../../images/services/services1_1x.jpg';
 
 // const unicodeCharacter = "\u0003";
 // U+23AF - код для горизонтальної лініїї
@@ -24,13 +24,13 @@ const Item = ({ title, content, img, customItemClass }) => {
 
   return (
     <li
-      className={!customItemClass ? css.item : css.item + " " + customItemClass}
+      className={!customItemClass ? css.item : css.item + ' ' + customItemClass}
     >
-      <div className={css.contentWrap}>
-        <Title size={"h3"} title={title} />
+      <div className={css.contentWrapeer}>
+        <Title size={'h3'} title={title} />
         <ul>{elements}</ul>
       </div>
-      <PhotoCard img={img} />
+      <PhotoCard customClass={css.imgWrapper} img={img} />
     </li>
   );
 };
@@ -45,7 +45,7 @@ Item.propTypes = {
 Item.defaultProps = {
   content: [],
   img: defaultPicture,
-  customItemClass: "",
+  customItemClass: '',
 };
 
 export default Item;

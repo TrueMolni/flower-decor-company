@@ -7,14 +7,24 @@
 .contentWrapper {
   display: flex;
   flex-direction: column;
-  margin-right: 16px;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
     width: 592px;
+    margin-right: 16px;
   }
 
   align-items: center;
   justify-content: space-around;
+}
+
+.customTitle {
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+.list {
+  margin-bottom: 32px;
 }
 
 .img {

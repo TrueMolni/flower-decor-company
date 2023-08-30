@@ -1,6 +1,13 @@
 .section {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 64px;
+  }
 }
 
 .list {

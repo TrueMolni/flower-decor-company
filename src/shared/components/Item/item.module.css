@@ -7,17 +7,32 @@
   }
 }
 
-.contentWrapeer {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-}
-
 .text {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 1.5;
 
   color: #222222;
+}
+
+@media screen and (max-width: 767px) {
+  .imgWrapper {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .imgWrapper {
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contentWrapeer {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
