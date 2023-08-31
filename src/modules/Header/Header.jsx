@@ -1,15 +1,26 @@
 import { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import MenuIcon from '@mui/icons-material/Menu';
 
+import Navigation from './Navigation';
+import MobileMenu from './MobileMenu';
+
 import css from './header.module.css';
+
+import { navData } from 'shared/data/navData';
 
 const Header = () => {
   const [isShow, setIsShow] = useState(false);
 
+  const handleClose = () => {
+    setIsShow(false);
+    document.body.style.overflow = 'visible';
+  };
+
   const showMenu = () => {
     setIsShow(true);
+    document.body.style.overflow = 'hidden';
   };
 
   return (
@@ -18,33 +29,17 @@ const Header = () => {
         <Link to={'/'} className={css.logo + ' link'}>
           Flower Decor Company
         </Link>
-        <nav className={css.navigation}>
-          <ul className={css.navList}>
-            <li className={css.item}>
-              <NavLink to="/" className={css.link}>
-                Замовити
-              </NavLink>
-            </li>
-            <li className={css.item}>
-              <NavLink to="/" className={css.link}>
-                Про нас
-              </NavLink>
-            </li>
-            <li className={css.item}>
-              <NavLink to="/" className={css.link}>
-                Блог
-              </NavLink>
-            </li>
-            <li className={css.item}>
-              <NavLink to="/gallery" className={css.link}>
-                Галерея
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
+        <Navigation
+          data={navData}
+          navStyle={css.navigation}
+          navItemStyle={css.item}
+          navLinkStyle={css.link}
+          navListStyle={css.navList}
+        />
         <button className={css.burger} onClick={showMenu}>
           <MenuIcon />
         </button>
+        {isShow && <MobileMenu closeHandler={handleClose} />}
       </div>
     </header>
   );
