@@ -3,8 +3,14 @@
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   max-width: 380px;
-  min-height: 180px;
+  min-height: 150px;
+
+  text-align: center;
 }
 
 .text {
@@ -20,18 +26,10 @@
     margin-top: 30px;
   }
 }
-@media screen and (max-width: 767px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    text-align: center;
-  }
-}
 
 @media screen and (min-width: 1200px) {
   .wrapper {
     max-width: 380px;
+    min-height: 180px;
   }
 }

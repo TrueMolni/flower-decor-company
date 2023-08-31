@@ -8,9 +8,6 @@
   text-align: center;
 }
 
-.item:nth-child(2n) {
-  flex-direction: row-reverse;
-}
 /* .contentWrapeer {
   display: flex;
 } */
@@ -28,6 +25,7 @@
 
 @media screen and (max-width: 767px) {
   .item {
+    justify-content: center;
     flex-wrap: wrap-reverse;
     margin-bottom: 32px;
   }
@@ -39,6 +37,9 @@
   }
   .img {
     width: 728px;
+  }
+  .item:nth-child(2n) {
+    flex-direction: row-reverse;
   }
 }
 

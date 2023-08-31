@@ -1,9 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+import css from './photo-card.module.css';
 
 const PhotoCard = ({ img, alt, width, customClass, imageClass }) => {
   return (
-    <div className={customClass}>
+    <div
+      className={!customClass ? css.card : css.PhotoCard + ' ' + customClass}
+    >
       <img className={imageClass} width={width} src={img} alt={alt} />
     </div>
   );
@@ -20,9 +23,9 @@ PhotoCard.propTypes = {
 };
 
 PhotoCard.defaultProps = {
-  img: "",
-  alt: "company picture",
-  width: "592",
-  customClass: "",
-  imageClass: "",
+  img: '',
+  alt: 'company picture',
+  width: '592',
+  customClass: '',
+  imageClass: '',
 };

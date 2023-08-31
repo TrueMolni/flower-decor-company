@@ -1,25 +1,35 @@
 .btn {
-  width: 208px;
-  padding: 22px 10px;
+  min-width: 200px;
+  padding: 10px;
 
-  font-family: "Inter";
-  font-size: 18px;
+  font-family: var(--secondary-font-family);
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.72px;
 
   border: none;
-  border-radius: 17px;
+  border-radius: 20px;
 
   color: #ffffff;
   background-color: #292f36;
 
   cursor: pointer;
+  box-shadow: var(--box-shadow);
 
-  transition: color 250ms ease-in, background 250ms ease-in;
+  transition: color var(--animation-duration) var(--animation-cubic),
+    background-color var(--animation-duration) var(--animation-cubic);
 
   &:hover,
   &:focus {
     background-color: #cda274;
     color: #292f36;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 208px;
+    padding: 16px 10px;
+
+    font-size: 18px;
+    border-radius: 20px;
   }
 }
