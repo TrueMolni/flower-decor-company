@@ -14,19 +14,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   list-style: none;
-}
-
-@media screen and(min-width:768px) {
-  .element {
-    width: 316px;
-    padding: 70px 42px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .list {
-    min-width: 1200px;
+    max-width: 1200px;
   }
 }
