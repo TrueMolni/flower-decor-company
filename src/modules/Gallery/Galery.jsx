@@ -20,7 +20,7 @@ const Galery = ({ data }) => {
   return (
     <section>
       <div className={css.wrapper}>
-        <Title size={"h2"} title={"Галерея"} />
+        <Title customClass={css.title} size={"h2"} title={"Галерея"} />
         <ul className={css.list}>{galleryCards}</ul>
       </div>
     </section>

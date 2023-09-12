@@ -3,18 +3,18 @@ import { nanoid } from 'nanoid';
 export const navData = [
   {
     id: nanoid(),
-    text: 'Замовити',
-    link: '/',
-  },
-  {
-    id: nanoid(),
     text: 'Про нас',
     link: '/',
   },
   {
     id: nanoid(),
+    text: 'Замовити',
+    link: '/s',
+  },
+  {
+    id: nanoid(),
     text: 'Блог',
-    link: '/',
+    link: '/s',
   },
   {
     id: nanoid(),
