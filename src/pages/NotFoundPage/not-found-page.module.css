@@ -1,0 +1,118 @@
+.box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .textbox {
+    flex-direction: row;
+  }
+}
+
+.icon {
+  margin-left: 10px;
+}
+
+.text {
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.38;
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.31;
+  }
+}
+
+.boxImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 123px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .boxImages {
+    height: 308px;
+    margin-bottom: 70px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .boxImages {
+    height: 360px;
+    margin-bottom: 18px;
+  }
+}
+
+.numberLeft {
+  font-family: var(--primary-font-family);
+  font-weight: 800;
+  font-size: 130px;
+  line-height: 1.3;
+  color: var(--btn-bg-color);
+  rotate: -11.34deg;
+}
+.numberRight {
+  font-family: var(--primary-font-family);
+  font-weight: 800;
+  font-size: 130px;
+  line-height: 1.3;
+  color: var(--btn-bg-color);
+  rotate: 24.23deg;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .numberLeft,
+  .numberRight {
+    font-size: 326px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .numberLeft,
+  .numberRight {
+    font-size: 381px;
+  }
+}
+
+.button {
+  text-decoration: none;
+  padding: 9px 51.5px;
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 4px;
+  border-radius: 40px;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-hover-color);
+  fill: var(--btn-hover-color);
+  min-width: 248px;
+
+  &:hover,
+  &:focus {
+    color: var(--btn-text-color);
+    fill: var(--btn-text-color);
+    background-color: var(--btn-hover-color);
+  }
+}
+
+.boxButton {
+  margin-top: 40px;
+}

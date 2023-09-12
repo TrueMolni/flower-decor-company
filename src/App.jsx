@@ -8,6 +8,7 @@ import SharedLayout from './modules/SharedLayout';
 
 const MainPage = lazy(() => import('pages/MainPage'));
 const GalleryPage = lazy(() => import('pages/GalleryPage'));
+const NotFoundPage = lazy(() => import('pages/NotFoundPage'));
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route index element={<MainPage />}></Route>
             <Route path="/gallery" element={<GalleryPage />}></Route>
           </Route>
+          <Route path="*" element={<NotFoundPage />}></Route>
         </Routes>
       </Suspense>
     </BrowserRouter>
