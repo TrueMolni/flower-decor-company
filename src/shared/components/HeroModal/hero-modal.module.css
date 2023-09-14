@@ -1,0 +1,61 @@
+.subtext {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+
+  color: #222222;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  gap: 12px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  display: inline-block;
+  max-width: 290px;
+  @media screen and (min-width: 768px) {
+    max-width: 400px;
+    width: 400px;
+  }
+}
+
+.input {
+  width: 100%;
+
+  padding: 8px 10px;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  border: 1px solid #111;
+
+  &:nth-child(4) {
+    max-width: 260px;
+  }
+}
+.btn {
+  margin-top: 12px;
+
+  align-self: center;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  width: 290px;
+  gap: 10px;
+}

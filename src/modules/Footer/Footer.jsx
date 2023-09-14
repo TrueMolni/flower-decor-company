@@ -32,22 +32,22 @@ const Footer = props => {
           <ul className={css.socialMediaLinks}>
             <li>
               <Link className={css.icon} to="/">
-                <FacebookOutlinedIcon />
+                <FacebookOutlinedIcon className={css.icon} />
               </Link>
             </li>
             <li>
               <Link className={css.icon} to="/">
-                <InstagramIcon />
+                <InstagramIcon className={css.icon} />
               </Link>
             </li>
             <li>
               <Link className={css.icon} to="/">
-                <PinterestIcon />
+                <PinterestIcon className={css.icon} />
               </Link>
             </li>
             <li>
               <Link className={css.icon} to="/">
-                <TwitterIcon />
+                <TwitterIcon className={css.icon} />
               </Link>
             </li>
           </ul>
