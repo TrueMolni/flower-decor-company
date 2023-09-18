@@ -1,0 +1,85 @@
+.darkTheme {
+  color: var(--black-theme-color);
+  background-color: var(--dark-theme-bg);
+  & header {
+    background-color: var(--dark-theme-bg);
+  }
+  & header > div > a {
+    color: #cda274;
+  }
+
+  & header > div > div > div {
+    background-color: #444;
+  }
+
+  & nav a {
+    color: var(--black-theme-color);
+  }
+  & footer {
+    background-color: var(--logo-color);
+  }
+  & footer > div > a {
+    color: #fff;
+  }
+  & p {
+    color: #fff;
+  }
+  & h2,
+  & h3 {
+    color: #cda274;
+  }
+
+  & section span > h2 {
+    color: #fff;
+  }
+  & form {
+    color: var(--primary-text-color);
+  }
+}
+
+.lightTheme {
+  color: var(--primary-text-color);
+  background-color: var(--black-theme-color);
+  & header {
+    background-color: var(--black-theme-color);
+  }
+  & header > div > a {
+    color: var(--logo-color);
+  }
+  & header > div > div > div {
+    background-color: var(--black-theme-color);
+  }
+  & nav a {
+    color: var(--primary-text-color);
+  }
+  & footer {
+    background-color: #e7ded8;
+  }
+  & footer > div > a {
+    color: var(--logo-color);
+  }
+}
+.themeBtn {
+  position: relative;
+}
+.iconPosition {
+  position: fixed;
+  bottom: 112px;
+  right: 10px;
+  z-index: 20;
+}
+.iconStyle {
+  background-color: #551b54;
+  /* border: 2px solid #fff; */
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.iconStyle:hover {
+  background: #fff;
+  color: #551b54;
+  /* border: 2px solid #551b54; */
+}

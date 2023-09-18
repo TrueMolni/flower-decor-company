@@ -30,7 +30,13 @@ const ContactCall = () => {
       {/* From Hero */}
       <div className={css.bg}>
         <div className={css.contentWrapper + ' container'}>
-          <Title customClass={css.mainTitle} title={'Пишіть нам'} size={'h2'} />
+          <span>
+            <Title
+              customClass={css.mainTitle}
+              title={'Пишіть нам'}
+              size={'h2'}
+            />
+          </span>
           <p className={css.description}>Створимо ефектний декор</p>
 
           <Button customClass={css.callBtn} text={'Замовити'} />

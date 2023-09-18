@@ -7,6 +7,7 @@ import Services from '../../modules/Services';
 // import Galery from '../../modules/Gallery';
 import ContactCall from '../../modules/ContactCall';
 import ScrollUpBtn from 'shared/components/ScrollUpBtn';
+import DarkThemeBtn from 'shared/components/DarkThemeBtn';
 
 import { servicesData } from '../../shared/data/servicesData';
 // import { galleryData } from '../../shared/data/galleryData';
@@ -22,6 +23,7 @@ const MainPage = () => {
       <Services items={servicesData} />
       {/* <Galery data={galleryData} /> */}
       <ContactCall />
+      <DarkThemeBtn />
       <ScrollUpBtn />
     </div>
   );
