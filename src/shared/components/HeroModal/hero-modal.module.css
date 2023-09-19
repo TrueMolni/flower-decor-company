@@ -59,3 +59,9 @@
   width: 290px;
   gap: 10px;
 }
+
+.modalWrapper {
+  padding: 10px 16px;
+
+  border-radius: 20px;
+}

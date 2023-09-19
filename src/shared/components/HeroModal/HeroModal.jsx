@@ -26,47 +26,49 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
 
   return (
     <Modal isOpen={isOpen} onClose={close}>
-      <Title title="Файно" size="h2" />
-      <p className={css.subtext}>
-        Залиште свої контакти для зворотнього зв'язку
-      </p>
-      <form className={css.form}>
-        <label className={css.label}>
-          Ім'я:
-          <input
-            className={css.input}
-            name="name"
-            type="text"
-            onChange={onChangeHandler}
-          />
-        </label>
-        <label className={css.label}>
-          Email:
-          <input
-            className={css.input}
-            name="email"
-            type="email"
-            onChange={onChangeHandler}
-          />
-        </label>
-        <label className={css.label}>
-          Номер телефону:
-          <input
-            className={css.input}
-            name="phone"
-            type="tel"
-            onChange={onChangeHandler}
-          />
-        </label>
-        <div>
-          <Button
-            onClick={submitHandler}
-            type="submit"
-            customClass={css.btn}
-            text="Надіслати"
-          />
-        </div>
-      </form>
+      <div className={css.modalWrapper} id="hero-modal">
+        <Title title="Файно" size="h2" />
+        <p className={css.subtext}>
+          Залиште свої контакти для зворотнього зв'язку
+        </p>
+        <form className={css.form}>
+          <label className={css.label}>
+            Ім'я:
+            <input
+              className={css.input}
+              name="name"
+              type="text"
+              onChange={onChangeHandler}
+            />
+          </label>
+          <label className={css.label}>
+            Email:
+            <input
+              className={css.input}
+              name="email"
+              type="email"
+              onChange={onChangeHandler}
+            />
+          </label>
+          <label className={css.label}>
+            Номер телефону:
+            <input
+              className={css.input}
+              name="phone"
+              type="tel"
+              onChange={onChangeHandler}
+            />
+          </label>
+          <div>
+            <Button
+              onClick={submitHandler}
+              type="submit"
+              customClass={css.btn}
+              text="Надіслати"
+            />
+          </div>
+        </form>
+      </div>
     </Modal>
   );
 };
