@@ -1,15 +1,32 @@
 import { useState, useEffect } from 'react';
-// import PropTypes from 'prop-types';
 import { GiSunflower } from 'react-icons/gi';
 import { BsMoonStars } from 'react-icons/bs';
 
 import css from './dark-theme-btn.module.css';
 
-const DarkThemeBtn = props => {
-  const [darkTheme, setDarkTheme] = useState(false);
+const DarkThemeBtn = () => {
+  const STORAGE_KEY = 'darkTheme';
+
+  const getStoredTheme = () => {
+    try {
+      const storedTheme = localStorage.getItem(STORAGE_KEY);
+      return storedTheme === 'true';
+    } catch (error) {
+      console.error('Помилка при отриманні даних з localStorage:', error);
+      return false;
+    }
+  };
+
+  const [darkTheme, setDarkTheme] = useState(getStoredTheme());
 
   const handleClick = () => {
-    setDarkTheme(!darkTheme);
+    const newTheme = !darkTheme;
+    setDarkTheme(newTheme);
+    try {
+      localStorage.setItem(STORAGE_KEY, newTheme.toString());
+    } catch (error) {
+      console.error('Помилка при збереженні даних в localStorage:', error.name);
+    }
   };
 
   useEffect(() => {
@@ -17,7 +34,6 @@ const DarkThemeBtn = props => {
       if (document.body.classList.contains(css.darkTheme)) {
         document.body.classList.remove(css.darkTheme);
       }
-
       document.body.classList.add(css.lightTheme);
     } else {
       if (document.body.classList.contains(css.lightTheme)) {
@@ -28,12 +44,7 @@ const DarkThemeBtn = props => {
   }, [darkTheme]);
 
   return (
-    <div
-      className={css.themeBtn}
-      onClick={handleClick}
-
-      //   text={darkTheme === true ? 'Light' : 'Dark'}
-    >
+    <div className={css.themeBtn} onClick={handleClick}>
       {darkTheme ? (
         <GiSunflower className={css.iconPosition + ' ' + css.iconStyle} />
       ) : (
@@ -42,7 +53,5 @@ const DarkThemeBtn = props => {
     </div>
   );
 };
-
-// DarkThemeBtn.propTypes = {};
 
 export default DarkThemeBtn;
