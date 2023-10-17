@@ -1,6 +1,7 @@
 .item {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
 
   &:not(:first-child) {
     margin-top: 40px;
@@ -28,11 +29,20 @@
     margin-bottom: auto;
     margin-top: auto;
   }
+  .text {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .contentWrapeer {
     margin-top: auto;
     margin-bottom: auto;
+  }
+  .img {
+    width: 1000px;
+  }
+  .text {
+    font-size: 38px;
   }
 }

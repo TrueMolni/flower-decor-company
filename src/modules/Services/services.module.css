@@ -17,19 +17,25 @@
   margin-right: auto;
 } */
 
-@media screen and (min-width: 1200px) {
-  .title {
-    margin-bottom: 32px;
-  }
+/* .text {
+  margin-top: 16px;
+} */
+
+.item {
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 32px;
+  width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+/* зміни */
+/* @media screen and (max-width: 767px) {
   .item {
     justify-content: center;
     flex-wrap: wrap-reverse;
     margin-bottom: 32px;
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
   .serviceList {
@@ -37,14 +43,27 @@
   }
   .img {
     width: 728px;
+    width: 100%;
   }
-  .item:nth-child(2n) {
+  /* зміни */
+  /* .item:nth-child(2n) {
     flex-direction: row-reverse;
-  }
+  } */
 }
 
 @media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 32px;
+  }
   .img {
     width: 1160px;
+    width: 100%;
+  }
+  .text {
+    font-size: 38px;
+  }
+  .customTitle {
+    font-size: 40px;
+    margin-top: 80px;
   }
 }

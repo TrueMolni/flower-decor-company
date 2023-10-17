@@ -14,7 +14,7 @@ import css from './conditions.module.css';
 const Conditions = () => {
   const list = items.map(({ id, text }) => (
     <li key={id}>
-      <p>{text}</p>
+      <p className={css.text}>{text}</p>
     </li>
   ));
 
@@ -28,7 +28,7 @@ const Conditions = () => {
             title={'Умови співпраці'}
           />
           <ul className={css.list}>{list}</ul>
-          <Button text={"Зв'язатися з нами"} />
+          <Button text={"Зв'язатися з нами"} customClass={css.btn} />
         </div>
 
         <PhotoCard

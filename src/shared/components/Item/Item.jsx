@@ -10,11 +10,22 @@ import defaultPicture from '../../images/services/services1_1x.jpg';
 // const unicodeCharacter = "\u0003";
 // U+23AF - код для горизонтальної лініїї
 
-const Item = ({ title, content, img, customItemClass }) => {
+const Item = ({
+  title,
+  content,
+  img,
+  customItemClass,
+  customTextClass,
+  customTitleClass,
+}) => {
   const elements = content.map(({ id, text }) => {
     return (
       <li key={id}>
-        <p className={css.text}>
+        <p
+          className={
+            !customTextClass ? css.text : css.text + ' ' + customTextClass
+          }
+        >
           {/* {unicodeCharacter} */}
           {text}
         </p>
@@ -27,10 +38,10 @@ const Item = ({ title, content, img, customItemClass }) => {
       className={!customItemClass ? css.item : css.item + ' ' + customItemClass}
     >
       <div className={css.contentWrapeer}>
-        <Title size={'h3'} title={title} />
+        <Title size={'h3'} title={title} customClass={customTitleClass} />
         <ul>{elements}</ul>
       </div>
-      <PhotoCard customClass={css.imgWrapper} img={img} />
+      <PhotoCard customClass={css.imgWrapper} img={img} imageClass={css.img} />
     </li>
   );
 };
@@ -40,12 +51,16 @@ Item.propTypes = {
   content: PropTypes.array,
   img: PropTypes.string,
   customItemClass: PropTypes.string,
+  customTextClass: PropTypes.string,
+  customTitleClass: PropTypes.string,
 };
 
 Item.defaultProps = {
   content: [],
   img: defaultPicture,
   customItemClass: '',
+  customTextClass: '',
+  customTitleClass: '',
 };
 
 export default Item;

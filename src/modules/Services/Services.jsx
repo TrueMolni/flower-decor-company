@@ -18,6 +18,8 @@ const Services = ({ items }) => {
       content={content}
       img={img}
       customItemClass={css.item}
+      customTextClass={css.text}
+      customTitleClass={css.customTitle}
     />
   ));
 

@@ -4,9 +4,7 @@ import css from './photo-card.module.css';
 
 const PhotoCard = ({ img, alt, width, customClass, imageClass }) => {
   return (
-    <div
-      className={!customClass ? css.card : css.PhotoCard + ' ' + customClass}
-    >
+    <div className={!customClass ? css.card : css.card + ' ' + customClass}>
       <img className={imageClass} width={width} src={img} alt={alt} />
     </div>
   );

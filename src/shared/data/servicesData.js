@@ -1,8 +1,15 @@
 import { nanoid } from 'nanoid';
 
+import image1_1x from '../images/gallery/gallery12_1x.jpg';
+import image2_1x from '../images/gallery/gallery21_1x.jpg';
+import image3_1x from '../images/gallery/gallery23_1x.jpg';
+import image4_1x from '../images/gallery/gallery20_1x.jpg';
+// import image5_1x from '../images/gallery/gallery15_1x.jpg';
+
 export const servicesData = [
   {
     title: 'Декор послуги та флористика для весілля',
+    img: image1_1x,
     content: [
       {
         id: nanoid(),
@@ -29,10 +36,10 @@ export const servicesData = [
         text: 'Весілля під замовлення',
       },
     ],
-    // img: "",
   },
   {
     title: 'Декор послуги та флористика',
+    img: image2_1x,
     content: [
       {
         id: nanoid(),
@@ -47,10 +54,10 @@ export const servicesData = [
         text: 'для ресторанів',
       },
     ],
-    // img: "",
   },
   {
     title: 'Виготовлення індивідуального декору',
+    img: image3_1x,
     content: [
       {
         id: nanoid(),
@@ -65,10 +72,10 @@ export const servicesData = [
         text: 'для ресторанів',
       },
     ],
-    // img: "",
   },
   {
     title: 'Індивідуальне оформлення ',
+    img: image4_1x,
     content: [
       {
         id: nanoid(),
@@ -83,6 +90,5 @@ export const servicesData = [
         text: 'індивідуальних фотосесій',
       },
     ],
-    // img: "",
   },
 ];

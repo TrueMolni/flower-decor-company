@@ -26,10 +26,10 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 208px;
+    min-width: 208px;
     padding: 16px 10px;
 
-    font-size: 18px;
+    font-size: 28px;
     border-radius: 20px;
   }
 }

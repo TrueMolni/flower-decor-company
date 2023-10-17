@@ -2,7 +2,8 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: #e7ded8;
+  /* background-color: #e7ded8; */
+  background-color: snow;
 
   @media screen and (max-width: 767px) {
     text-align: center;
@@ -21,7 +22,7 @@
   @media screen and (min-width: 768px) {
     width: 768px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: 1200px) {
@@ -86,9 +87,20 @@
 }
 
 .icon {
-  /* display: inline-block; */
+  display: inline-block;
   width: 36px;
   height: 36px;
   color: blue;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 1200px) {
+  .text,
+  .link {
+    font-size: 30px;
+  }
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
 }

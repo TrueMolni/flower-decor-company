@@ -3,22 +3,32 @@
   padding-bottom: 30px;
 }
 
+.list {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    max-width: 768px;
+    gap: 20px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 64px;
   }
-}
-
-.list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-}
-
-@media screen and (min-width: 1200px) {
   .list {
     max-width: 1200px;
+    gap: 80px;
   }
 }
