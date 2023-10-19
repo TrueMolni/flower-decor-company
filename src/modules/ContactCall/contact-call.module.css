@@ -99,6 +99,11 @@
   .mainTitle {
     width: 696px;
     margin: 0 auto;
+
+    font-size: 40px;
+  }
+  .description {
+    font-size: 38px;
   }
 }
 

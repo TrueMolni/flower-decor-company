@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import image from '../../shared/images/services/services1_1x.jpg';
+import image from '../../shared/images/services/services2_1x.jpg';
 
 import Title from '../../shared/components/Title';
 import PhotoCard from '../../shared/components/PhotoCard/PhotoCard';
@@ -27,7 +27,7 @@ const Services = ({ items }) => {
     <section className={'section'}>
       <div className={'container'}>
         <Title customClass={css.title} title={'Наші послуги'} size={'h2'} />
-        <PhotoCard imageClass={css.img} img={image} />
+        <PhotoCard imageClass={css.img + ' ' + css.borderRadius} img={image} />
         <ul className={css.serviceList}>{posts}</ul>
       </div>
     </section>

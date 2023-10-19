@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { GiSunflower } from 'react-icons/gi';
-import { BsMoonStars } from 'react-icons/bs';
+// import { BsMoonStars } from 'react-icons/bs';
 
+import { BsFillMoonStarsFill } from 'react-icons/bs';
 import css from './dark-theme-btn.module.css';
 
 const DarkThemeBtn = () => {
@@ -48,7 +49,10 @@ const DarkThemeBtn = () => {
       {darkTheme ? (
         <GiSunflower className={css.iconPosition + ' ' + css.iconStyle} />
       ) : (
-        <BsMoonStars className={css.iconPosition + ' ' + css.iconStyle} />
+        // <BsMoonStars className={css.iconPosition + ' ' + css.iconStyle} />
+        <BsFillMoonStarsFill
+          className={css.iconPosition + ' ' + css.iconStyle}
+        />
       )}
     </div>
   );

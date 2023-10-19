@@ -1,7 +1,7 @@
 .mainTitle {
   text-align: center;
   font-family: 
-  /* "StyleScript", */ sans-serif;
+  /* "StyleScript", */ 'Roboto slab', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -16,7 +16,7 @@
 .title {
   text-align: center;
   font-family:
-   /* "Lobster", */ sans-serif;
+   /* "Lobster", */ 'Montserat', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 26px;
@@ -27,7 +27,7 @@
 
 .subTitle {
   font-family: 
-  /* "Lobster",  */ sans-serif;
+  /* "Lobster",  */ 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -38,6 +38,15 @@
   /* Colour/Main/Blue/900 */
 
   color: #621244;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+  .subTitle {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

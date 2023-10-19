@@ -2,10 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // import PropTypes from "prop-types";
 
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import PinterestIcon from '@mui/icons-material/Pinterest';
-import TwitterIcon from '@mui/icons-material/Twitter';
+// import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+// import InstagramIcon from '@mui/icons-material/Instagram';
+// import PinterestIcon from '@mui/icons-material/Pinterest';
+// import TwitterIcon from '@mui/icons-material/Twitter';
+
+import {
+  BsInstagram,
+  BsPinterest,
+  BsFacebook,
+  BsTwitter,
+} from 'react-icons/bs';
 
 import css from './footer.module.css';
 
@@ -32,22 +39,26 @@ const Footer = props => {
           <ul className={css.socialMediaLinks}>
             <li>
               <Link className={css.icon} to="/">
-                <FacebookOutlinedIcon className={css.icon} />
+                {/* <FacebookOutlinedIcon className={css.icon} /> */}
+                <BsFacebook className={css.icon} />
               </Link>
             </li>
             <li>
               <Link className={css.icon} to="/">
-                <InstagramIcon className={css.icon} />
+                {/* <InstagramIcon className={css.icon} /> */}
+                <BsInstagram className={css.icon} />
               </Link>
             </li>
             <li>
               <Link className={css.icon} to="/">
-                <PinterestIcon className={css.icon} />
+                {/* <PinterestIcon className={css.icon} /> */}
+                <BsPinterest className={css.icon} />
               </Link>
             </li>
             <li>
               <Link className={css.icon} to="/">
-                <TwitterIcon className={css.icon} />
+                {/* <TwitterIcon className={css.icon} /> */}
+                <BsTwitter className={css.icon} />
               </Link>
             </li>
           </ul>
