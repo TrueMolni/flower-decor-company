@@ -26,6 +26,11 @@
 .contentWrapper {
   padding: 0;
   text-align: center;
+
+  /* gsap */
+  opacity: 0;
+  transform: translateX(15rem);
+  /*  */
 }
 
 .description {

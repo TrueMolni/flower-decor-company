@@ -1,12 +1,46 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 // import PropTypes from "prop-types";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import Title from '../../shared/components/Title';
 import Button from '../../shared/components/Button';
+import HeroModal from 'shared/components/HeroModal';
+
+import { useToggle } from 'shared/hooks/useToggle';
 
 import css from './contact-call.module.css';
 
 const ContactCall = () => {
+  const [userData, setUserData] = useState([]);
+  const { open, close, isOpen } = useToggle();
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to('.g', {
+      scrollTrigger: {
+        trigger: '.g',
+        start: 'top 50%',
+        end: 'top 10%',
+        // snap: 1,
+        // scrub: 1,
+        // markers: true,
+        // toggleActions: 'restart pause reverse pause',
+      },
+      opacity: 1,
+      x: 0,
+      duration: 2,
+      ease: 'power4.out',
+    });
+  }, []);
+
+  const onSubmit = user => {
+    setUserData(prev => {
+      return [...prev, user];
+    });
+    console.log(userData);
+  };
+
   return (
     <section className={css.section}>
       {/* <div className={css.container}>
@@ -29,7 +63,7 @@ const ContactCall = () => {
       </div> */}
       {/* From Hero */}
       <div className={css.bg}>
-        <div className={css.contentWrapper + ' container'}>
+        <div className={css.contentWrapper + ' container g'}>
           <span>
             <Title
               customClass={css.mainTitle}
@@ -39,9 +73,10 @@ const ContactCall = () => {
           </span>
           <p className={css.description}>Створимо ефектний декор</p>
 
-          <Button customClass={css.callBtn} text={'Замовити'} />
+          <Button onClick={open} customClass={css.callBtn} text={'Замовити'} />
         </div>
       </div>
+      <HeroModal handleSubmit={onSubmit} isOpen={isOpen} close={close} />
     </section>
   );
 };

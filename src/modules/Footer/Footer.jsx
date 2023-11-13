@@ -1,4 +1,8 @@
-import React from 'react';
+import { useEffect } from 'react';
+
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 import { Link } from 'react-router-dom';
 // import PropTypes from "prop-types";
 
@@ -9,58 +13,80 @@ import { Link } from 'react-router-dom';
 
 import {
   BsInstagram,
-  BsPinterest,
-  BsFacebook,
-  BsTwitter,
+  // BsPinterest,
+  // BsFacebook,
+  // BsTwitter,
 } from 'react-icons/bs';
 
 import css from './footer.module.css';
 
 const Footer = props => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to('.f', {
+      scrollTrigger: {
+        trigger: '.f',
+        start: 'top 50%',
+        end: 'top 10%',
+        // snap: 1,
+        // scrub: 1,
+        // markers: true,
+        // toggleActions: 'restart pause reverse pause',
+      },
+      opacity: 1,
+      y: 0,
+      duration: 2,
+      ease: 'power4.out',
+    });
+  }, []);
+
   return (
-    <footer className={css.footer}>
+    <footer className={css.footer + ' f'}>
       <div className={css.container + ' conatiner'}>
         <Link className={css.logo} href="/">
           Flower Decor Company
         </Link>
         <div className={css.contactsWrapper}>
           <p className={css.text + ' ' + css.accent}>Контакти</p>
-          <p className={css.text}>Маєте запитання чи пропозиції?</p>
+          <p className={css.text}>Email:</p>
           <Link className={css.link + ' link'} to="mailto:example@mail.com">
             example@mail.com
           </Link>
-          <p className={css.text}>Маєте питання? Телефонуйте</p>
-          <Link className={css.link + ' link'} to="tel:+01 598 269 4756">
-            +01 598 269 4756
+          <p className={css.text}>Телефонуйте:</p>
+          <Link className={css.link + ' link'} to="tel:+380661093240">
+            +380 66 109 3240
           </Link>
         </div>
         <div>
           <p className={css.text + ' ' + css.accent}>Слідкуйте за нами</p>
           <ul className={css.socialMediaLinks}>
-            <li>
+            {/* <li>
               <Link className={css.icon} to="/">
-                {/* <FacebookOutlinedIcon className={css.icon} /> */}
                 <BsFacebook className={css.icon} />
               </Link>
-            </li>
+            </li> */}
             <li>
-              <Link className={css.icon} to="/">
+              <Link
+                target="_blank"
+                className={css.icon}
+                to="https://instagram.com/flowerdecorcompany?igshid=MWQwMG9hejFwcDRmcQ=="
+              >
                 {/* <InstagramIcon className={css.icon} /> */}
                 <BsInstagram className={css.icon} />
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link className={css.icon} to="/">
-                {/* <PinterestIcon className={css.icon} /> */}
+                
                 <BsPinterest className={css.icon} />
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link className={css.icon} to="/">
-                {/* <TwitterIcon className={css.icon} /> */}
+            
                 <BsTwitter className={css.icon} />
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -1,6 +1,10 @@
 .section {
   padding-top: 60px;
   padding-bottom: 30px;
+  /* gsap */
+  opacity: 0;
+  transform: translateX(15rem);
+  /*  */
 }
 
 .list {

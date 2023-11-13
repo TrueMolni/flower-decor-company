@@ -1,5 +1,7 @@
-import React from 'react';
+import { useEffect } from 'react';
 // import PropTypes from "prop-types";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import Title from '../../shared/components/Title';
 import Button from '../../shared/components/Button';
@@ -12,6 +14,25 @@ import image1 from '../../shared/images/conditions/conditions_1x.png';
 import css from './conditions.module.css';
 
 const Conditions = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to('.n', {
+      scrollTrigger: {
+        trigger: '.n',
+        start: 'top 50%',
+        end: 'top 10%',
+        // snap: 1,
+        // scrub: 1,
+        // markers: true,
+        // toggleActions: 'restart pause reverse pause',
+      },
+      opacity: 1,
+      x: 0,
+      duration: 2,
+      ease: 'power4.out',
+    });
+  }, []);
+
   const list = items.map(({ id, text }) => (
     <li key={id}>
       <p className={css.text}>{text}</p>
@@ -19,7 +40,7 @@ const Conditions = () => {
   ));
 
   return (
-    <section className="section">
+    <section className={css.section + ' section n'}>
       <div className={css.wrapper + ' container'}>
         <div className={css.contentWrapper}>
           <Title

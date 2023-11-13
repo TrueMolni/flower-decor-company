@@ -23,6 +23,10 @@
 .contentWrapper {
   padding: 0;
   text-align: center;
+
+  /* gsap */
+  opacity: 0;
+  /*  */
 }
 
 .mainTitle {

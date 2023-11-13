@@ -1,5 +1,7 @@
-import React from 'react';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import image from '../../shared/images/services/services2_1x.jpg';
 
@@ -11,6 +13,24 @@ import Item from '../../shared/components/Item';
 import css from './services.module.css';
 
 const Services = ({ items }) => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to('.e', {
+      scrollTrigger: {
+        trigger: '.e',
+        start: 'top 50%',
+        end: 'top 10%',
+        // snap: 1,
+        // scrub: 1,
+        // markers: true,
+        // toggleActions: 'restart pause reverse pause',
+      },
+      opacity: 1,
+      duration: 2,
+      ease: 'power4.out',
+    });
+  }, []);
+
   const posts = items.map(({ title, content, img }) => (
     <Item
       key={title}
@@ -24,7 +44,7 @@ const Services = ({ items }) => {
   ));
 
   return (
-    <section className={'section'}>
+    <section className={css.section + ' section e'}>
       <div className={'container'}>
         <Title customClass={css.title} title={'Наші послуги'} size={'h2'} />
         <PhotoCard imageClass={css.img + ' ' + css.borderRadius} img={image} />

@@ -5,6 +5,11 @@
   /* background-color: #e7ded8; */
   background-color: snow;
 
+  /* gsap */
+  opacity: 0;
+  transform: translatey(-15rem);
+  /*  */
+
   @media screen and (max-width: 767px) {
     text-align: center;
   }

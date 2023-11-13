@@ -1,3 +1,10 @@
+.section {
+  /* gsap */
+  opacity: 0;
+  /* transform: translateX(15rem); */
+  /*  */
+}
+
 .title {
   margin-bottom: 20px;
 }
