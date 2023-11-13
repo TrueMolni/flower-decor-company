@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/flower-decor-company/static/css/main.13b77b4b.css",
-    "main.js": "/flower-decor-company/static/js/main.e7a0c802.js",
+    "main.js": "/flower-decor-company/static/js/main.b27f0986.js",
     "static/css/169.8f3673fe.chunk.css": "/flower-decor-company/static/css/169.8f3673fe.chunk.css",
-    "static/js/169.b61f7cdf.chunk.js": "/flower-decor-company/static/js/169.b61f7cdf.chunk.js",
+    "static/js/169.168fe09f.chunk.js": "/flower-decor-company/static/js/169.168fe09f.chunk.js",
     "static/css/695.a31b7736.chunk.css": "/flower-decor-company/static/css/695.a31b7736.chunk.css",
     "static/js/695.52b238a6.chunk.js": "/flower-decor-company/static/js/695.52b238a6.chunk.js",
     "static/css/760.574edddc.chunk.css": "/flower-decor-company/static/css/760.574edddc.chunk.css",
@@ -57,9 +57,9 @@
     "static/media/services2_1x.jpg": "/flower-decor-company/static/media/services2_1x.7b7fe55b73f173c7b172.jpg",
     "index.html": "/flower-decor-company/index.html",
     "main.13b77b4b.css.map": "/flower-decor-company/static/css/main.13b77b4b.css.map",
-    "main.e7a0c802.js.map": "/flower-decor-company/static/js/main.e7a0c802.js.map",
+    "main.b27f0986.js.map": "/flower-decor-company/static/js/main.b27f0986.js.map",
     "169.8f3673fe.chunk.css.map": "/flower-decor-company/static/css/169.8f3673fe.chunk.css.map",
-    "169.b61f7cdf.chunk.js.map": "/flower-decor-company/static/js/169.b61f7cdf.chunk.js.map",
+    "169.168fe09f.chunk.js.map": "/flower-decor-company/static/js/169.168fe09f.chunk.js.map",
     "695.a31b7736.chunk.css.map": "/flower-decor-company/static/css/695.a31b7736.chunk.css.map",
     "695.52b238a6.chunk.js.map": "/flower-decor-company/static/js/695.52b238a6.chunk.js.map",
     "760.574edddc.chunk.css.map": "/flower-decor-company/static/css/760.574edddc.chunk.css.map",
@@ -69,6 +69,6 @@
   },
   "entrypoints": [
     "static/css/main.13b77b4b.css",
-    "static/js/main.e7a0c802.js"
+    "static/js/main.b27f0986.js"
   ]
 }
