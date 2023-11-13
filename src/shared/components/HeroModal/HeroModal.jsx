@@ -27,7 +27,7 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
   return (
     <Modal isOpen={isOpen} onClose={close}>
       <div className={css.modalWrapper} id="hero-modal">
-        <Title title="Файно" size="h2" />
+        <Title title="Прекрасно!" size="h2" />
         <p className={css.subtext}>
           Залиште свої контакти для зворотнього зв'язку
         </p>
