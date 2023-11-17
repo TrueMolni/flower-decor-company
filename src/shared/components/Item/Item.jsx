@@ -5,7 +5,7 @@ import Title from '../Title';
 import PhotoCard from '../PhotoCard';
 
 import css from './item.module.css';
-import defaultPicture from '../../images/services/services1_1x.jpg';
+// import defaultPicture from '../../images/services/services1_1x.jpg';
 
 // const unicodeCharacter = "\u0003";
 // U+23AF - код для горизонтальної лініїї
