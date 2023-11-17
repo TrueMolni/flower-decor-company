@@ -2,7 +2,7 @@
   "name": "flower-decor-company",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://TrueMolni.github.io/flower-decor-company/",
+  "homepage": "/",
   "dependencies": {
     "@chakra-ui/react": "^2.5.4",
     "@emotion/react": "^11.10.6",
