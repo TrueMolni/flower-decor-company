@@ -41,7 +41,13 @@ const Item = ({
         <Title size={'h3'} title={title} customClass={customTitleClass} />
         <ul>{elements}</ul>
       </div>
-      <PhotoCard customClass={css.imgWrapper} img={img} imageClass={css.img} />
+      {img && (
+        <PhotoCard
+          customClass={css.imgWrapper}
+          img={img}
+          imageClass={css.img}
+        />
+      )}
     </li>
   );
 };
@@ -57,7 +63,8 @@ Item.propTypes = {
 
 Item.defaultProps = {
   content: [],
-  img: defaultPicture,
+  // img: defaultPicture,
+  img: '',
   customItemClass: '',
   customTextClass: '',
   customTitleClass: '',

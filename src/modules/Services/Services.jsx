@@ -36,7 +36,7 @@ const Services = ({ items }) => {
       key={title}
       title={title}
       content={content}
-      img={img}
+      // img={img}
       customItemClass={css.item}
       customTextClass={css.text}
       customTitleClass={css.customTitle}

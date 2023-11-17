@@ -42,7 +42,7 @@
 
   text-decoration: none;
 
-  font-family: 'Inter';
+  font-family: 'Roboto Slab';
   font-weight: 700;
   font-size: 30px;
   line-height: 1;
@@ -95,7 +95,7 @@
   display: inline-block;
   width: 36px;
   height: 36px;
-  color: blue;
+  color: var(--logo-color);
   vertical-align: middle;
 }
 
