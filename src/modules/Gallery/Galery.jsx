@@ -14,6 +14,7 @@ const Galery = ({ data }) => {
         img={img}
         alt={'Оформлення та дизайн'}
         width={'350'}
+        imageClass={css.image}
       />
     </li>
   ));
