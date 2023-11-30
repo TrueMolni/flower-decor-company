@@ -51,6 +51,7 @@
 .btn {
   margin-top: 12px;
 
+  cursor: pointer;
   align-self: center;
   text-align: center;
 }
