@@ -20,10 +20,6 @@ const Services = ({ items }) => {
         trigger: '.e',
         start: 'top 50%',
         end: 'top 10%',
-        // snap: 1,
-        // scrub: 1,
-        // markers: true,
-        // toggleActions: 'restart pause reverse pause',
       },
       opacity: 1,
       duration: 2,
@@ -36,7 +32,6 @@ const Services = ({ items }) => {
       key={title}
       title={title}
       content={content}
-      // img={img}
       customItemClass={css.item}
       customTextClass={css.text}
       customTitleClass={css.customTitle}

@@ -1,0 +1,16 @@
+.link {
+  display: inline-block;
+  margin-bottom: 8px;
+
+  color: var(--logo-color);
+  transition: color var(--animation-duration) var(--animation-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}

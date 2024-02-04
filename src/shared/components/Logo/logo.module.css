@@ -1,0 +1,17 @@
+.logo {
+  width: 100px;
+
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+
+  color: var(--logo-color);
+
+  @media screen and (max-width: 1199px) {
+    & {
+      font-size: 16px;
+      height: auto;
+    }
+  }
+}

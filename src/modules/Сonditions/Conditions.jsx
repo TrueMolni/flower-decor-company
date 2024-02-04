@@ -1,15 +1,13 @@
 import { useEffect } from 'react';
-// import PropTypes from "prop-types";
+
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import Title from '../../shared/components/Title';
-import Button from '../../shared/components/Button';
 import PhotoCard from '../../shared/components/PhotoCard';
 
 import { items } from './items';
 import image1 from '../../shared/images/conditions/conditions_1x.png';
-// import image2 from "../../shared/images/conditions/conditions_2x.png";
 
 import css from './conditions.module.css';
 
@@ -21,10 +19,6 @@ const Conditions = () => {
         trigger: '.n',
         start: 'top 50%',
         end: 'top 10%',
-        // snap: 1,
-        // scrub: 1,
-        // markers: true,
-        // toggleActions: 'restart pause reverse pause',
       },
       opacity: 1,
       x: 0,
@@ -49,7 +43,6 @@ const Conditions = () => {
             title={'Умови співпраці'}
           />
           <ul className={css.list}>{list}</ul>
-          <Button text={"Зв'язатися з нами"} customClass={css.btn} />
         </div>
 
         <PhotoCard
@@ -65,5 +58,3 @@ const Conditions = () => {
 };
 
 export default Conditions;
-
-// Conditions.propTypes = {};

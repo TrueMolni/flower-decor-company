@@ -1,26 +1,16 @@
 import { useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import { Link } from 'react-router-dom';
-// import PropTypes from "prop-types";
+import Logo from 'shared/components/Logo';
+import PhoneLink from 'shared/components/PhoneLink';
 
-// import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-// import InstagramIcon from '@mui/icons-material/Instagram';
-// import PinterestIcon from '@mui/icons-material/Pinterest';
-// import TwitterIcon from '@mui/icons-material/Twitter';
-
-import {
-  BsInstagram,
-  // BsPinterest,
-  // BsFacebook,
-  // BsTwitter,
-} from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
 
 import css from './footer.module.css';
 
-const Footer = props => {
+const Footer = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to('.f', {
@@ -28,10 +18,6 @@ const Footer = props => {
         trigger: '.f',
         start: 'top 50%',
         end: 'top 10%',
-        // snap: 1,
-        // scrub: 1,
-        // markers: true,
-        // toggleActions: 'restart pause reverse pause',
       },
       opacity: 1,
       y: 0,
@@ -43,9 +29,7 @@ const Footer = props => {
   return (
     <footer className={css.footer + ' f'}>
       <div className={css.container + ' conatiner'}>
-        <Link className={css.logo} href="/">
-          Flower Decor Company
-        </Link>
+        <Logo className={css.logo} />
         <div className={css.contactsWrapper}>
           <p className={css.text + ' ' + css.accent}>Контакти</p>
           <p className={css.text}>Email:</p>
@@ -53,47 +37,30 @@ const Footer = props => {
             example@mail.com
           </Link>
           <p className={css.text}>Телефонуйте:</p>
-          <Link className={css.link + ' link'} to="tel:+380661093240">
-            +380 66 109 3240
-          </Link>
+          <PhoneLink />
         </div>
         <div>
           <p className={css.text + ' ' + css.accent}>Слідкуйте за нами</p>
           <ul className={css.socialMediaLinks}>
-            {/* <li>
-              <Link className={css.icon} to="/">
-                <BsFacebook className={css.icon} />
-              </Link>
-            </li> */}
             <li>
-              <Link
+              <a
+                title={'Сторінка компанії в Instagram'}
+                aria-label={
+                  'Перейти на сторінку компанії в Instagram в новій вкладці'
+                }
+                rel="noopener noreferrer nofollow"
                 target="_blank"
                 className={css.icon}
-                to="https://instagram.com/flowerdecorcompany?igshid=MWQwMG9hejFwcDRmcQ=="
+                href="https://instagram.com/flowerdecorcompany?igshid=MWQwMG9hejFwcDRmcQ=="
               >
-                {/* <InstagramIcon className={css.icon} /> */}
                 <BsInstagram className={css.icon} />
-              </Link>
+              </a>
             </li>
-            {/* <li>
-              <Link className={css.icon} to="/">
-                
-                <BsPinterest className={css.icon} />
-              </Link>
-            </li> */}
-            {/* <li>
-              <Link className={css.icon} to="/">
-            
-                <BsTwitter className={css.icon} />
-              </Link>
-            </li> */}
           </ul>
         </div>
       </div>
     </footer>
   );
 };
-
-// Footer.propTypes = {};
 
 export default Footer;

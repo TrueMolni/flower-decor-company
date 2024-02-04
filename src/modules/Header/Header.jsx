@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import MenuIcon from '@mui/icons-material/Menu';
 
 import Navigation from './Navigation';
 import MobileMenu from './MobileMenu';
+import Logo from '../../shared/components/Logo';
+import PhoneLink from 'shared/components/PhoneLink';
 
 import css from './header.module.css';
 
@@ -26,9 +27,8 @@ const Header = () => {
   return (
     <header className={css.header}>
       <div className={css.wrapper + ' container'}>
-        <Link to={'/'} className={css.logo + ' link'}>
-          Flower Decor Company
-        </Link>
+        <Logo />
+
         <Navigation
           data={navData}
           navStyle={css.navigation}
@@ -36,6 +36,7 @@ const Header = () => {
           navLinkStyle={css.link}
           navListStyle={css.navList}
         />
+        <PhoneLink className={css.phone} />
         <button className={css.burger} onClick={showMenu}>
           <MenuIcon />
         </button>

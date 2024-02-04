@@ -6,16 +6,7 @@ export const navData = [
     text: 'Про нас',
     link: '/',
   },
-  {
-    id: nanoid(),
-    text: 'Замовити',
-    link: '/s',
-  },
-  {
-    id: nanoid(),
-    text: 'Блог',
-    link: '/s',
-  },
+
   {
     id: nanoid(),
     text: 'Галерея',
