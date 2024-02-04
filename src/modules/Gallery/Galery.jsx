@@ -1,4 +1,4 @@
-import React from 'react';
+import { memo } from 'react';
 import PropTypes from 'prop-types';
 
 import Title from '../../shared/components/Title';
@@ -33,4 +33,4 @@ Galery.propTypes = {
   data: PropTypes.array,
 };
 
-export default Galery;
+export default memo(Galery);

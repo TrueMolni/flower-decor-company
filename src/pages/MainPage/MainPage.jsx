@@ -12,11 +12,11 @@ import DarkThemeBtn from 'shared/components/DarkThemeBtn';
 import { servicesData } from '../../shared/data/servicesData';
 // import { galleryData } from '../../shared/data/galleryData';
 
-import css from './main-page.module.css';
+// import css from './main-page.module.css';
 
 const MainPage = () => {
   return (
-    <div className={css.wrapper}>
+    <>
       <Hero />
       <Features />
       <Conditions />
@@ -25,7 +25,7 @@ const MainPage = () => {
       <ContactCall />
       <DarkThemeBtn />
       <ScrollUpBtn />
-    </div>
+    </>
   );
 };
 
