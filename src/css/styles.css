@@ -1,9 +1,10 @@
 /* base */
-@import "./base//_base.css";
-@import "./base/_container.css";
-@import "./base/_variables.css";
-@import "./base/_section.css";
+@import './base//_base.css';
+@import './base/_container.css';
+@import './base/_variables.css';
+@import './base/_section.css';
+@import './base/_slider.css';
 
 /* utils */
 
-@import "./utils/_visuallyHidden.css";
+@import './utils/_visuallyHidden.css';

@@ -1,0 +1,55 @@
+.icon {
+  height: 31px;
+  width: 31px;
+  fill: #551b54;
+}
+
+.rotateLeft {
+  transform: rotate(-90deg);
+}
+
+.rotateRight {
+  transform: rotate(90deg);
+}
+
+.list {
+  margin: 0 auto;
+  margin-top: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+
+  width: fit-content;
+  height: fit-content;
+
+  pointer-events: none;
+}
+.cakeStyles {
+  margin: 0 !important;
+  justify-content: space-between !important;
+
+  width: 100%;
+
+  position: absolute;
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+/* .item {
+  margin-left: 8px;
+  margin-right: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+} */

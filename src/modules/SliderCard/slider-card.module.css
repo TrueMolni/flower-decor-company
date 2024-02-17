@@ -1,0 +1,26 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 17/16;
+
+  @media screend and (min-width: 480px) {
+    width: 440px;
+    height: 415px;
+  }
+
+  @media screend and (min-width: 768px) {
+    width: 704px;
+    height: 660px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 592px;
+    height: 555px;
+  }
+}
+
+.img {
+  background-color: transparent;
+  border-radius: 24px;
+  object-fit: cover;
+}
