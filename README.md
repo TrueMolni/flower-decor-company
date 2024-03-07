@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# ::cherry_blossom Flower Decor Company ::cherry_blossom
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**[Переглянути живу сторінку](https://truemolni.github.io/flower-decor-company/)**
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+![Зображення сайту](./public/opengraph_image.png)
 
-### `npm start`
+## Опис проєкту
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Назва проєкту**: Flower Decor Company
+- **Цілі проєкту**:
+- Створення позитивного особистого бренду
+- Залучення нових клієнтів / партнерів
+  - Просування послуг через веб-сайт
+  - Інформування споживачів
+- **Цільова аудиторія**: Вік: 20-45+
+- **Стать**: Жіноча/чоловіча
+- **Обсяг продукту**: Розробка багатосторінкового веб-сайту для компанії "FDC",
+  основна сфера діяльності якої - створення унікального та вишуканого декору для
+  церемоній для святкових подій.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Створення проєкту
 
-### `npm test`
+**FDC** - це проєкт [Next.js](https://nextjs.org/) , збудований за допомогою
+[Create React App](https://github.com/facebook/create-react-app).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Особливості
 
-### `npm run build`
+- **Оптимізація**: Сайт оптимізований для швидкого завантаження, що забезпечує
+  користувачам швидкий доступ до інформації.
+- **Модульність та перевикористання**: Продукт побудований з використанням
+  компонентного підходу, що робить код модульним і дозволяє використовувати
+  компоненти на різних сторінках та розділах проєкту. Це спрощує обслуговування
+  сайту та розширення його функціональності.
+- **Лінтери та форматування**: Використання інструментів, таких як Prettier та
+  ESLint, допомагає дотримуватися стандартів коду, забезпечує єдиний стиль та
+  виявляє можливі проблеми в коді.
+- **Адаптивність**: Сайт є адаптивним, що дозволяє створювати динамічні та
+  інтерактивні інтерфейси користувача без перезавантаження сторінки. Це збільшує
+  залучення та взаємодію користувачів.
+- **Доступність**:
+  - Інтуїтивний дизайн;
+  - Семантична верстка;
+  - Інтерфейс, зручний для мобільних пристроїв;
+  - Ресурс доступний для будь-якого Інтернет-з'єднання;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Структура проєкту
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<summary><b>Організація проєкту та Розташування Файлів: </b></summary>
+<br/>
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+|-- public -> статичні файли
+|-- src -> директорія із вихідним кодом основної
+програми
+  |-- pages ->  маршрутизація
+    |-- NamePage --> базові сторінки
+  |-- modules -> директорія зі складними компонентами
+    |-- NameComponent -> базові компоненти
+    секцій/блоків (слайдер і т.д.)
+  |-- shared -> невеликі, зручні компоненти
+   |-- components -> невеликі, зручні компоненти
+    (кнопки, логотипи і т.д.)
+      |-- NameComponent -> папка для кожного компонента
+        |-- NameComponent.jsx -> основний компонент
+        |-- index.js -> файл для повторного
+        експорту
+        |-- name-component.module.css -> файл для мудульних стилів компонента
+    |-- data -> статичні дані для проєкту (json/js)
+    |-- hooks -> кастомні хуки
+    |-- images ->
+    директорія з фотографіями проєкту
+    |-- css -> директорія з стилями проєкту
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+</details>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧩 Технології
 
-## Learn More
+### Frontend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React**: для розробки реактивних веб-сайтів та застосунків.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Стилізація
 
-### Code Splitting
+- **CSS modules**: Утиліта для забезпечення унікальних імен класів в CSS.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Бібліотеки
 
-### Analyzing the Bundle Size
+- **Swiper**: Сучасна бібліотека для роботи зі слайдерами та каруселями.
+- **GSAP**: Бібліотека для відтворення плавних стлів при скролі до розділів
+  сайту.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Структура проєкту
 
-### Making a Progressive Web App
+```mermaid
+graph LR
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  Z{Вхід} --> A((Головна сторінка))
+  A --> B[Header]
+  A --> C[Секція 1. Hero]
+  A --> D[Секція 2. Features]
+  A --> E[Секція 3. Conditions]
+  A --> F[Секція 4. Services]
+  A --> G[Секція 5. Gallery]
+  A --> H[Секція 6. ContactCall]
+  A --> I[Footer]
+```
 
-### Advanced Configuration
+## 📂 Деплоймент
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Для розгортання цього проєкту слід виконати наступні кроки:
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Клонуйте репозиторій**: Використовуйте команду `git clone`, щоб склонувати
+   цей репозиторій на свій комп'ютер.
+2. **Встановіть залежності**: Відкрийте термінал у кореневій папці проєкту та
+   запустіть команду `npm install` або `yarn install`, щоб встановити всі
+   необхідні залежності.
+3. **Запустіть застосунок**: Запустіть команду `npm run dev` або `yarn dev`, щоб
+   запустити проєкт на локальному сервері.
+4. **Розгортання**: Для розгортання цього проєкту на виробничому сервері
+   використовуйте платформи хостингу, такі як Vercel, Netlify або інші.
