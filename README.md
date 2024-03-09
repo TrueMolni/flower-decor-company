@@ -1,4 +1,4 @@
-# ::cherry_blossom Flower Decor Company ::cherry_blossom
+# :cherry_blossom: Flower Decor Company :cherry_blossom:
 
 **[Переглянути живу сторінку](https://truemolni.github.io/flower-decor-company/)**
 
