@@ -1,15 +1,37 @@
 import { nanoid } from 'nanoid';
 
 export const navData = [
-  {
+  // {
+  //   id: nanoid(),
+  //   text: 'Про нас',
+  //   link: '/',
+  // },
+
+  // {
+  //   id: nanoid(),
+  //   text: 'Галерея',
+  //   link: '/gallery',
+  // },
+{
     id: nanoid(),
     text: 'Про нас',
-    link: '/',
+    link: 'about',
   },
 
   {
     id: nanoid(),
-    text: 'Галерея',
-    link: '/gallery',
+    text: 'Умови',
+    link: 'conditions',
   },
+    {
+    id: nanoid(),
+    text: 'Послуги',
+    link: 'services',
+  },
+      {
+    id: nanoid(),
+    text: 'Замовити',
+    link: 'order',
+  },
+  
 ];

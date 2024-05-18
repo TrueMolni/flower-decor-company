@@ -28,7 +28,6 @@ const Header = () => {
     <header className={css.header}>
       <div className={css.wrapper + ' container'}>
         <Logo />
-
         <Navigation
           data={navData}
           navStyle={css.navigation}
@@ -40,7 +39,13 @@ const Header = () => {
         <button className={css.burger} onClick={showMenu}>
           <MenuIcon />
         </button>
-        {isShow && <MobileMenu closeHandler={handleClose} />}
+
+        {isShow && (
+          <MobileMenu
+            closeHandler={handleClose}
+            className={isShow && css.isShow}
+          />
+        )}
       </div>
     </header>
   );

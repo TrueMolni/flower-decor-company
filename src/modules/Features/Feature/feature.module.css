@@ -7,8 +7,10 @@
   flex-direction: column;
   justify-content: space-between;
 
-  max-width: 380px;
-
+  /* max-width: 380px; */
+  /* зміни */
+  max-width: 480px;
+  /*  */
   text-align: center;
 }
 
@@ -18,6 +20,12 @@
 
 .btn {
   margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 1199px) {

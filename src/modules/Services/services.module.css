@@ -10,8 +10,7 @@
 }
 
 .serviceList {
-  margin-top: 50px;
-
+  /* margin-top: 50px; */
   text-align: center;
 }
 
@@ -49,9 +48,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .serviceList {
+  /* .serviceList {
     margin-top: 100px;
-  }
+  } */
   .img {
     width: 728px;
     width: 100%;

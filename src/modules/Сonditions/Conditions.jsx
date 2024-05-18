@@ -34,7 +34,7 @@ const Conditions = () => {
   ));
 
   return (
-    <section className={css.section + ' section n'}>
+    <section id="conditions" className={css.section + ' section n'}>
       <div className={css.wrapper + ' container'}>
         <div className={css.contentWrapper}>
           <Title

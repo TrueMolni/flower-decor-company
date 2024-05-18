@@ -1,4 +1,5 @@
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import PropTypes from 'prop-types';
 
 const Navigation = ({
@@ -10,9 +11,19 @@ const Navigation = ({
 }) => {
   const elements = data.map(({ id, text, link }) => (
     <li className={navItemStyle} key={id}>
-      <NavLink className={navLinkStyle} to={link}>
+      {/* <NavLink className={navLinkStyle} to={link}>
         {text}
-      </NavLink>
+      </NavLink> */}
+      <Link
+        className={navLinkStyle}
+        to={link}
+        href="/"
+        spy
+        smooth
+        duration={500}
+      >
+        {text}
+      </Link>
     </li>
   ));
 

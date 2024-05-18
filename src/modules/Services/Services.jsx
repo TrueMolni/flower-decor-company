@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import image from '../../shared/images/services/services2_1x.jpg';
+// import image from '../../shared/images/services/services2_1x.jpg';
 
 import Title from '../../shared/components/Title';
-import PhotoCard from '../../shared/components/PhotoCard/PhotoCard';
+// import PhotoCard from '../../shared/components/PhotoCard/PhotoCard';
 import Item from '../../shared/components/Item';
-// import { css } from "@emotion/react";
 
 import css from './services.module.css';
 
@@ -39,10 +38,10 @@ const Services = ({ items }) => {
   ));
 
   return (
-    <section className={css.section + ' section e'}>
+    <section id="services" className={css.section + ' section e'}>
       <div className={'container'}>
         <Title customClass={css.title} title={'Наші послуги'} size={'h2'} />
-        <PhotoCard imageClass={css.img + ' ' + css.borderRadius} img={image} />
+        {/* <PhotoCard imageClass={css.img + ' ' + css.borderRadius} img={image} /> */}
         <ul className={css.serviceList}>{posts}</ul>
       </div>
     </section>

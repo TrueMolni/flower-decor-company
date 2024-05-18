@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, A11y } from 'swiper/modules';
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -19,7 +19,7 @@ export const Slider = ({
     <>
       <Swiper
         wrapperTag="ul"
-        modules={[Navigation, Pagination, A11y]}
+        modules={[Navigation, Pagination, A11y, Autoplay]}
         navigation={{
           nextEl: `.button-next-${section}`,
           prevEl: `.button-prev-${section}`,
@@ -27,6 +27,7 @@ export const Slider = ({
         slidesPerView={1}
         updateOnWindowResize={true}
         loop={true}
+        autoplay={true}
         speed={800}
         spaceBetween={24}
         lazyPreloadPrevNext={1}

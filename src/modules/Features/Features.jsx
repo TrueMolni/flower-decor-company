@@ -30,7 +30,7 @@ const Features = () => {
   ));
 
   return (
-    <section className={'c ' + css.section}>
+    <section id="about" className={'c ' + css.section}>
       <div className={'container'}>
         <Title customClass={'visuallyHidden'} size={'h2'} title={'Переваги'} />
         <ul className={css.list}>{items}</ul>

@@ -80,3 +80,7 @@
     display: block;
   }
 }
+
+.isShow {
+  transform: translate(-10%, 0);
+}

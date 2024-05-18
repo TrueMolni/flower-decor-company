@@ -1,8 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// import css from "./app.module.css";
-
 import Loader from './shared/components/Loader';
 import SharedLayout from './modules/SharedLayout';
 

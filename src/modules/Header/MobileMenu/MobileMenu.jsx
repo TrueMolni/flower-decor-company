@@ -7,7 +7,7 @@ import css from './mobile-menu.module.css';
 
 import { navData } from '../../../shared/data/navData';
 
-const MobileMenu = ({ closeHandler }) => {
+const MobileMenu = ({ closeHandler, className = '' }) => {
   const handleClickOutside = event => {
     event.stopPropagation();
     if (
@@ -20,8 +20,8 @@ const MobileMenu = ({ closeHandler }) => {
   };
 
   return (
-    <div onClick={handleClickOutside} className={css.backdrop + ' backdrop'}>
-      <div className={css.mobileModal + ' container'}>
+    <div onClick={handleClickOutside} className={css.backdrop + ' backdrop '}>
+      <div className={css.mobileModal + ' container ' + className}>
         <button onClick={closeHandler} className={css.closeBtn} type="button">
           <CloseIcon />
         </button>
