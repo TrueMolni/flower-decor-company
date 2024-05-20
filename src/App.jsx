@@ -10,7 +10,7 @@ const NotFoundPage = lazy(() => import('pages/NotFoundPage'));
 
 function App() {
   return (
-    <BrowserRouter basename="flower-decor-company">
+    <BrowserRouter basename="/">
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<SharedLayout />}>
