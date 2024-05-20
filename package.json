@@ -2,7 +2,7 @@
   "name": "flower-decor-company",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://TrueMolni.github.io/flower-decor-company/",
+
   "dependencies": {
     "@jridgewell/sourcemap-codec": "^1.4.15",
     "@mui/icons-material": "^5.14.1",
