@@ -2,7 +2,6 @@
   "name": "flower-decor-company",
   "version": "0.1.0",
   "private": true,
-
   "dependencies": {
     "@jridgewell/sourcemap-codec": "^1.4.15",
     "@mui/icons-material": "^5.14.1",
