@@ -11,15 +11,11 @@ const Modal = ({ isOpen, onClose, children }) => {
   useEffect(
     () => {
       const handleKeyPress = event => {
-        if (event.key === 'Escape') {
-          handleClose();
-        }
+        event.key === 'Escape' && handleClose();
       };
 
       const handleClickOutside = event => {
-        if (event.target.className === 'backdrop') {
-          handleClose();
-        }
+        event.target.className === 'backdrop' && handleClose();
       };
 
       if (isOpen) {
@@ -36,7 +32,7 @@ const Modal = ({ isOpen, onClose, children }) => {
         document.removeEventListener('click', handleClickOutside);
       };
     }
-    //   [isOpen]
+    //  , [isOpen]
   );
 
   if (!isOpen) {
@@ -44,9 +40,9 @@ const Modal = ({ isOpen, onClose, children }) => {
   }
 
   return (
-    <div>
+    <>
       <div className={css.backdrop} onClick={handleClose}></div>
-      <div className={css.modal}>
+      <div id='modal' className={css.modal}>
         <div className={css.modalContent}>
           <IoClose
             type="button"
@@ -56,7 +52,7 @@ const Modal = ({ isOpen, onClose, children }) => {
           {children}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

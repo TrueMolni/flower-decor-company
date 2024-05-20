@@ -16,7 +16,7 @@ const Footer = () => {
     gsap.to('.f', {
       scrollTrigger: {
         trigger: '.f',
-        start: 'top 50%',
+        start: 'top 60%',
         end: 'top 10%',
       },
       opacity: 1,

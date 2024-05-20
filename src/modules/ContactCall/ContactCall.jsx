@@ -22,10 +22,6 @@ const ContactCall = () => {
         trigger: '.g',
         start: 'top 50%',
         end: 'top 10%',
-        // snap: 1,
-        // scrub: 1,
-        // markers: true,
-        // toggleActions: 'restart pause reverse pause',
       },
       opacity: 1,
       x: 0,
@@ -35,9 +31,7 @@ const ContactCall = () => {
   }, []);
 
   const onSubmit = user => {
-    setUserData(prev => {
-      return [...prev, user];
-    });
+    setUserData(prev => [...prev, user]);
     console.log(userData);
   };
 

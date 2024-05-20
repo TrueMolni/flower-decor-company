@@ -51,7 +51,7 @@
     color: var(--black-theme-color);
   }
 
-  & div[id='hero-modal'] {
+  & div[id='modal'] {
     /* background-color: #444; */
     background-color: var(--logo-color);
   }
@@ -83,7 +83,7 @@
     color: var(--primary-text-color);
   }
 
-  & div[id='hero-modal'] {
+  & div[id='modal'] {
     background-color: #e7ded8;
   }
 }

@@ -6,6 +6,8 @@ import Modal from '../Modal';
 import Title from '../Title';
 import Button from '../Button';
 
+import FDC from '../../images/qr-codes/FDC.svg';
+
 const initialState = { name: '', email: '', phone: '' };
 
 const HeroModal = ({ isOpen, close, handleSubmit }) => {
@@ -26,7 +28,7 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
 
   return (
     <Modal isOpen={isOpen} onClose={close}>
-      <div className={css.modalWrapper} id="hero-modal">
+      <div className={css.modalWrapper}>
         <Title title="Прекрасно!" size="h2" />
         <p className={css.subtext}>
           Залиште свої контакти для зворотнього зв'язку
@@ -68,6 +70,17 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
             />
           </div>
         </form>
+        <div className={css.qrWrapper}>
+          <p className={css.label}>Aбо</p>
+          <p className={css.label}>
+            Відскануйте QR code і перейдіть на наш Instagram{' '}
+          </p>
+          <img
+            className={css.qrImage}
+            src={FDC}
+            alt="qr-code посилання на сторінку в інстаграм"
+          />
+        </div>
       </div>
     </Modal>
   );
