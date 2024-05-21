@@ -71,7 +71,7 @@ const ContactCall = () => {
           <Button onClick={open} customClass={css.callBtn} text={'Замовити'} />
         </div>
       </div>
-      <HeroModal isOpen={isOpen} close={close} />
+      <HeroModal isOpen={true} close={close} />
     </section>
   );
 };
