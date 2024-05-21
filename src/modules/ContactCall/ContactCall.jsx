@@ -14,7 +14,7 @@ import css from './contact-call.module.css';
 
 const ContactCall = () => {
   // const [userData, setUserData] = useState([]);
-  const { open, close } = useToggle();
+  const { open, close, isOpen } = useToggle();
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -71,7 +71,7 @@ const ContactCall = () => {
           <Button onClick={open} customClass={css.callBtn} text={'Замовити'} />
         </div>
       </div>
-      <HeroModal isOpen={true} close={close} />
+      <HeroModal isOpen={isOpen} close={close} />
     </section>
   );
 };
