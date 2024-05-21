@@ -46,7 +46,8 @@ const HeroModal = ({ isOpen, close }) => {
       return;
     }
 
-    formRef.submit();
+    formRef.current.submit();
+
     setErrors({});
     setState({ ...initialState });
     formRef.current.reset();
@@ -70,9 +71,7 @@ const HeroModal = ({ isOpen, close }) => {
           name="contact"
           action="/contact"
           method="POST"
-          data-netlify-honeypot="bot-field"
           ref={formRef}
-          data-netlify="true"
           className={css.form}
           onSubmit={submitHandler}
         >
