@@ -10,7 +10,7 @@ import FDC from '../../images/qr-codes/FDC.svg';
 
 const initialState = { name: '', email: '', phone: '' };
 
-const HeroModal = ({ isOpen, close, handleSubmit }) => {
+const HeroModal = ({ isOpen, close }) => {
   const [state, setState] = useState({ ...initialState });
   const [errors, setErrors] = useState({});
 
@@ -46,7 +46,6 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
       return;
     }
 
-    handleSubmit(state);
     formRef.current.submit();
 
     setErrors({});
@@ -90,13 +89,14 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
               name="name"
               type="text"
               onChange={onChangeHandler}
+              required
             />
             {errors.name && <p>{errors.name}</p>}
           </label>
           <label className={css.label}>
             Email:
             <input
-              required={true}
+              required
               className={css.input}
               name="email"
               type="email"
@@ -111,6 +111,7 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
               name="phone"
               type="tel"
               onChange={onChangeHandler}
+              required
             />
             {errors.phone && <p>{errors.phone}</p>}
           </label>

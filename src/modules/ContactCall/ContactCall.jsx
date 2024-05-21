@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 // import PropTypes from "prop-types";
+import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -12,7 +13,7 @@ import { useToggle } from 'shared/hooks/useToggle';
 import css from './contact-call.module.css';
 
 const ContactCall = () => {
-  const [userData, setUserData] = useState([]);
+  // const [userData, setUserData] = useState([]);
   const { open, close, isOpen } = useToggle();
 
   useEffect(() => {
@@ -30,10 +31,10 @@ const ContactCall = () => {
     });
   }, []);
 
-  const onSubmit = user => {
-    setUserData(prev => [...prev, user]);
-    console.log(userData);
-  };
+  // const onSubmit = user => {
+  //   setUserData(prev => [...prev, user]);
+  //   console.log(userData);
+  // };
 
   return (
     <section id="order" className={css.section}>
@@ -70,7 +71,7 @@ const ContactCall = () => {
           <Button onClick={open} customClass={css.callBtn} text={'Замовити'} />
         </div>
       </div>
-      <HeroModal handleSubmit={onSubmit} isOpen={isOpen} close={close} />
+      <HeroModal isOpen={isOpen} close={close} />
     </section>
   );
 };
