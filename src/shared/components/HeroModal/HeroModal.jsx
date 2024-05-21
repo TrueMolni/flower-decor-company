@@ -14,7 +14,7 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
   const [state, setState] = useState({ ...initialState });
   const [errors, setErrors] = useState({});
 
-  const form = useRef();
+  const formRef = useRef();
 
   const validateEmail = email => {
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -47,11 +47,11 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
     }
 
     handleSubmit(state);
-    e.target.submit();
+    formRef.current.submit();
 
     setErrors({});
     setState({ ...initialState });
-    form.current.reset();
+    formRef.current.reset();
   };
 
   const onChangeHandler = ({ target }) => {
@@ -72,9 +72,10 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
           name="contact"
           method="POST"
           data-netlify-honeypot="bot-field"
-          ref={form}
+          ref={formRef}
           data-netlify="true"
           className={css.form}
+          onSubmit={submitHandler}
         >
           <input type="hidden" name="form-name" value="contact" />
           <p hidden>
@@ -114,12 +115,7 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
             {errors.phone && <p>{errors.phone}</p>}
           </label>
           <div>
-            <Button
-              onClick={submitHandler}
-              type="submit"
-              customClass={css.btn}
-              text="Надіслати"
-            />
+            <Button type="submit" customClass={css.btn} text="Надіслати" />
           </div>
         </form>
         <div className={css.qrWrapper}>
