@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import css from './hero-modal.module.css';
 
@@ -12,11 +12,46 @@ const initialState = { name: '', email: '', phone: '' };
 
 const HeroModal = ({ isOpen, close, handleSubmit }) => {
   const [state, setState] = useState({ ...initialState });
+  const [errors, setErrors] = useState({});
+
+  const form = useRef();
+
+  const validateEmail = email => {
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regex.test(email);
+  };
+
+  const validateName = name => {
+    const regex = /^[a-zA-Zа-яА-ЯїЇєЄіІґҐ'-]{1,40}$/;
+    return regex.test(name);
+  };
+
+  const validatePhone = phone => {
+    const regex = /^\+?3?8?(0\d{9})$/;
+    return regex.test(phone);
+  };
 
   const submitHandler = e => {
     e.preventDefault();
+    const emailIsValid = validateEmail(state.email);
+    const nameIsValid = validateName(state.name);
+    const phoneIsValid = validatePhone(state.phone);
+
+    if (!emailIsValid || !nameIsValid || !phoneIsValid) {
+      setErrors({
+        email: !emailIsValid ? 'Невірна електронна адреса' : '',
+        name: !nameIsValid ? "Невірне ім'я" : '',
+        phone: !phoneIsValid ? 'Невірний номер телефону' : '',
+      });
+      return;
+    }
+
     handleSubmit(state);
+    console.log(state);
+
+    setErrors({});
     setState({ ...initialState });
+    form.current.reset();
   };
 
   const onChangeHandler = ({ target }) => {
@@ -33,7 +68,7 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
         <p className={css.subtext}>
           Залиште свої контакти для зворотнього зв'язку
         </p>
-        <form className={css.form}>
+        <form ref={form} netlify className={css.form}>
           <label className={css.label}>
             Ім'я:
             <input
@@ -42,15 +77,18 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
               type="text"
               onChange={onChangeHandler}
             />
+            {errors.name && <p>{errors.name}</p>}
           </label>
           <label className={css.label}>
             Email:
             <input
+              required={true}
               className={css.input}
               name="email"
               type="email"
               onChange={onChangeHandler}
             />
+            {errors.email && <p>{errors.email}</p>}
           </label>
           <label className={css.label}>
             Номер телефону:
@@ -60,6 +98,7 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
               type="tel"
               onChange={onChangeHandler}
             />
+            {errors.phone && <p>{errors.phone}</p>}
           </label>
           <div>
             <Button
