@@ -10,10 +10,15 @@ import FDC from '../../images/qr-codes/FDC.svg';
 
 const initialState = { name: '', email: '', phone: '' };
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 const HeroModal = ({ isOpen, close }) => {
   const [state, setState] = useState({ ...initialState });
   const [errors, setErrors] = useState({});
-
   const formRef = useRef();
 
   const validateEmail = email => {
@@ -46,9 +51,20 @@ const HeroModal = ({ isOpen, close }) => {
       return;
     }
 
-    setErrors({});
-    setState({ ...initialState });
-    formRef.current.reset();
+    const form = formRef.current;
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...state }),
+    })
+      .then(() => {
+        alert('Форма успішно надіслана!');
+        setState({ ...initialState });
+        setErrors({});
+        form.reset();
+      })
+      .catch(error => alert('Помилка при відправці форми: ' + error));
   };
 
   const onChangeHandler = ({ target }) => {
@@ -94,11 +110,11 @@ const HeroModal = ({ isOpen, close }) => {
           <label className={css.label}>
             Email:
             <input
-              required
               className={css.input}
               name="email"
               type="email"
               onChange={onChangeHandler}
+              required
             />
             {errors.email && <p>{errors.email}</p>}
           </label>
