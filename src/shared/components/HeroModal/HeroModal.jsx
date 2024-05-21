@@ -47,18 +47,7 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
     }
 
     handleSubmit(state);
-
-    const data = new FormData(e.target);
-    fetch('/', {
-      method: 'POST',
-      body: data,
-    })
-      .then(() => {
-        console.log('Форма відправлена');
-      })
-      .catch(error => {
-        console.error('Помилка при відправці форми:', error);
-      });
+    e.target.submit();
 
     setErrors({});
     setState({ ...initialState });
@@ -84,7 +73,7 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
           method="POST"
           data-netlify-honeypot="bot-field"
           ref={form}
-          netlify
+          data-netlify="true"
           className={css.form}
         >
           <input type="hidden" name="form-name" value="contact" />
