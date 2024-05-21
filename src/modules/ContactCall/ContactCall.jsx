@@ -14,7 +14,7 @@ import css from './contact-call.module.css';
 
 const ContactCall = () => {
   // const [userData, setUserData] = useState([]);
-  const { open, close, isOpen } = useToggle();
+  const { open, close } = useToggle();
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
