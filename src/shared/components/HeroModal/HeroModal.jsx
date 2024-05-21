@@ -46,6 +46,7 @@ const HeroModal = ({ isOpen, close }) => {
       return;
     }
 
+    formRef.submit();
     setErrors({});
     setState({ ...initialState });
     formRef.current.reset();
