@@ -47,7 +47,19 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
     }
 
     handleSubmit(state);
-    console.log(state);
+
+    const form = e.target;
+    const data = new FormData(form);
+    fetch('/', {
+      method: 'POST',
+      body: data,
+    })
+      .then(() => {
+        console.log('Форма відправлена');
+      })
+      .catch(error => {
+        console.error('Помилка при відправці форми:', error);
+      });
 
     setErrors({});
     setState({ ...initialState });
@@ -68,7 +80,20 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
         <p className={css.subtext}>
           Залиште свої контакти для зворотнього зв'язку
         </p>
-        <form ref={form} netlify className={css.form}>
+        <form
+          name="contact"
+          method="POST"
+          data-netlify-honeypot="bot-field"
+          ref={form}
+          netlify
+          className={css.form}
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out: <input name="bot-field" />
+            </label>
+          </p>
           <label className={css.label}>
             Ім'я:
             <input
