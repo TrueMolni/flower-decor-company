@@ -48,8 +48,7 @@ const HeroModal = ({ isOpen, close, handleSubmit }) => {
 
     handleSubmit(state);
 
-    const form = e.target;
-    const data = new FormData(form);
+    const data = new FormData(e.target);
     fetch('/', {
       method: 'POST',
       body: data,
