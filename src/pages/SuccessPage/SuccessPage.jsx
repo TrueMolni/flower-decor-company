@@ -1,9 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 
-import css from './not-found-page.module.css';
 import Button from 'shared/components/Button';
 
-const NotFoundPage = () => {
+import css from './success-page.module.css';
+
+const SuccessPage = () => {
   const navigate = useNavigate();
   const goToMainPage = () => {
     navigate('/');
@@ -12,10 +13,10 @@ const NotFoundPage = () => {
   return (
     <div className={css.box}>
       <div className={css.textbox}>
-        <span className={css.text}>Ooops!</span>
-        <span className={css.text}>This page not found </span>
+        <span className={css.text}>Дякуємо!</span>
+        <span className={css.text}>Вашу заявку буде опрацьовано </span>
       </div>
-      <div className={css.boxButton}>
+      <div className="boxButton">
         <Button
           onClick={goToMainPage}
           customClass={css.button}
@@ -26,4 +27,4 @@ const NotFoundPage = () => {
   );
 };
 
-export default NotFoundPage;
+export default SuccessPage;

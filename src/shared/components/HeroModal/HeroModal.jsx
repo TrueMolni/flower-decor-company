@@ -69,7 +69,7 @@ const HeroModal = ({ isOpen, close }) => {
         </p>
         <form
           name="contact"
-          action="/contact"
+          action="/pages/successPage"
           method="POST"
           ref={formRef}
           className={css.form}

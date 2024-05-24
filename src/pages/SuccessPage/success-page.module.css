@@ -1,0 +1,56 @@
+.box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.text {
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.38;
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.31;
+  }
+}
+
+.button {
+  text-decoration: none;
+  padding: 9px 51.5px;
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 4px;
+  border-radius: 40px;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-hover-color);
+  fill: var(--btn-hover-color);
+  min-width: 248px;
+
+  &:hover,
+  &:focus {
+    color: var(--btn-text-color);
+    fill: var(--btn-text-color);
+    background-color: var(--btn-hover-color);
+  }
+}
+
+.boxButton {
+  margin-top: 40px;
+}
