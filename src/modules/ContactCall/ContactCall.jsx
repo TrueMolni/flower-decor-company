@@ -1,5 +1,3 @@
-// import { useState, useEffect } from 'react';
-// import PropTypes from "prop-types";
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -13,7 +11,6 @@ import { useToggle } from 'shared/hooks/useToggle';
 import css from './contact-call.module.css';
 
 const ContactCall = () => {
-  // const [userData, setUserData] = useState([]);
   const { open, close, isOpen } = useToggle();
 
   useEffect(() => {
@@ -30,11 +27,6 @@ const ContactCall = () => {
       ease: 'power4.out',
     });
   }, []);
-
-  // const onSubmit = user => {
-  //   setUserData(prev => [...prev, user]);
-  //   console.log(userData);
-  // };
 
   return (
     <section id="order" className={css.section}>
@@ -68,14 +60,17 @@ const ContactCall = () => {
           </span>
           <p className={css.description}>Створимо ефектний декор</p>
 
-          <Button onClick={open} customClass={css.callBtn} text={'Замовити'} />
+          <Button
+            onClick={open}
+            customClass={css.callBtn}
+            text={'Замовити'}
+            ariaLabel={'Замовити декор'}
+          />
         </div>
       </div>
       <HeroModal isOpen={isOpen} close={close} />
     </section>
   );
 };
-
-// ContactCall.propTypes = {};
 
 export default ContactCall;

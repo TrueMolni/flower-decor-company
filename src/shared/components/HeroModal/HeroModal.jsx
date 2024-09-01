@@ -115,7 +115,12 @@ const HeroModal = ({ isOpen, close }) => {
             {errors.phone && <p>{errors.phone}</p>}
           </label>
           <div>
-            <Button type="submit" customClass={css.btn} text="Надіслати" />
+            <Button
+              type="submit"
+              customClass={css.btn}
+              text="Надіслати"
+              ariaLabel="Надіслати"
+            />
           </div>
         </form>
         <div className={css.qrWrapper}>

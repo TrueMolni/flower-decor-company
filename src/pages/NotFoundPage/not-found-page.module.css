@@ -17,6 +17,7 @@
 @media screen and (min-width: 768px) {
   .textbox {
     flex-direction: row;
+    gap: 10px;
   }
 }
 

@@ -22,7 +22,7 @@ const MobileMenu = ({ closeHandler, className = '' }) => {
   return (
     <div onClick={handleClickOutside} className={css.backdrop + ' backdrop '}>
       <div className={css.mobileModal + ' container ' + className}>
-        <button onClick={closeHandler} className={css.closeBtn} type="button">
+        <button onClick={closeHandler} className={css.closeBtn} type="button" aria-label='Закрити'>
           <CloseIcon />
         </button>
         <Navigation

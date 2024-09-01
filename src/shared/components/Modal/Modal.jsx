@@ -48,6 +48,7 @@ const Modal = ({ isOpen, onClose, children }) => {
             type="button"
             className={css.closeButton}
             onClick={handleClose}
+            aria-label='Закрити'
           />
           {children}
         </div>

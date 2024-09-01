@@ -4,7 +4,6 @@ import image1_1x from '../images/gallery/gallery12_1x.jpg';
 import image2_1x from '../images/gallery/gallery21_1x.jpg';
 import image3_1x from '../images/gallery/gallery23_1x.jpg';
 import image4_1x from '../images/gallery/gallery20_1x.jpg';
-// import image5_1x from '../images/gallery/gallery15_1x.jpg';
 
 export const servicesData = [
   {

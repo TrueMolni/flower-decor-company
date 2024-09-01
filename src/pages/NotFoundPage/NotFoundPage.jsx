@@ -6,20 +6,21 @@ import Button from 'shared/components/Button';
 const NotFoundPage = () => {
   const navigate = useNavigate();
   const goToMainPage = () => {
-    navigate('/');
+    navigate('/', { replace: true });
   };
 
   return (
     <div className={css.box}>
       <div className={css.textbox}>
-        <span className={css.text}>Ooops!</span>
-        <span className={css.text}>This page not found </span>
+        <span className={css.text}>{'Ой! '}</span>
+        <span className={css.text}>{'Ми не змогли знайти цієї сторінки'}</span>
       </div>
       <div className={css.boxButton}>
         <Button
           onClick={goToMainPage}
           customClass={css.button}
-          text="To main page"
+          text="На головну сторінку"
+          ariaLabel="На головну сторінку"
         />
       </div>
     </div>
